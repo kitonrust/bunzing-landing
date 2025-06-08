@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html
+  lang="{{ site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div class="max-w-screen-7xl">
+      <!-- {{ partial "sticky-banner.html" }} -->
+      <header>{{ partial "header.html" . }}</header>
+      <main>
+        {{ partial "hero.html" . }} {{ partial "countdown.html" . }} {{ block
+        "main" . }}{{ end }} {{ partial "more-info.html" . }} {{ partial
+        "testimonial.html" . }} {{ partial "team.html" . }}
+      </main>
+      <footer>{{ partial "footer.html" . }}</footer>
+    </div>
+  </body>
+</html>

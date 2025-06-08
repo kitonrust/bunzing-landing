@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'nl-nl'
+title = 'Bunzing'
+theme = ["flow-theme"]

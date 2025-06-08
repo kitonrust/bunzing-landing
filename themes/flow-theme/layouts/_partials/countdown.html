@@ -1,0 +1,56 @@
+<!-- Countdown Section -->
+<section class="text-center my-12">
+  <h2 class="text-xl text-gray-600 mb-4">Live over</h2>
+
+  <!-- Countdown Timer -->
+  <div id="countdown" class="flex space-x-4 justify-center">
+    <div class="text-center">
+      <div class="text-4xl font-bold text-indigo-600" id="days"></div>
+      <div class="text-sm text-gray-500">Dagen</div>
+    </div>
+    <div class="text-center">
+      <div class="text-4xl font-bold text-indigo-600" id="hours"></div>
+      <div class="text-sm text-gray-500">Uren</div>
+    </div>
+    <div class="text-center">
+      <div class="text-4xl font-bold text-indigo-600" id="minutes"></div>
+      <div class="text-sm text-gray-500">Minuten</div>
+    </div>
+    <div class="text-center">
+      <div class="text-4xl font-bold text-indigo-600" id="seconds"></div>
+      <div class="text-sm text-gray-500">Seconden</div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Set the date to count down to
+  const launchDate = new Date("2025-06-24 00:00:00").getTime();
+
+  // Update the countdown every 1 second
+  const countdown = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = launchDate - now;
+
+    // Calculate days, hours, minutes, and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // If the countdown is over, display a message
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML =
+        "<p class='text-xl text-red-500 font-bold'>It's live!</p>";
+    }
+  }, 1000);
+</script>
