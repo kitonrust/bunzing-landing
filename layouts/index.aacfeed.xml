@@ -1,2 +1,2 @@
-{{- .Scratch.Set "asset-format" "ogg" -}}
+{{- .Scratch.Set "asset-format" "aac" -}}
 {{partial "podcast-feed.xml" . | safeHTML}}
