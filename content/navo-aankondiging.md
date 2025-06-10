@@ -1,10 +1,11 @@
 +++
+date = 2025-06-06
 author = "Bunzing"
 title = "NAVO: De keerzijde van een verdrag"
-date = 2025-06-06
+series_title = "NAVO: De keerzijde van een verdrag"
+number = "0"
 layout = "episode"
 eptype = "full"
-number = "0"
 duration = "00:33:25"
 
 short_description = "Short blurb about this episode."
