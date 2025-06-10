@@ -3,3 +3,20 @@ languageCode = 'nl-nl'
 title = 'Ontdek wat er werkelijk achter NAVO schuilgaat | Bunzing'
 description = ''
 theme = ["flow-theme"]
+
+
+[params]
+twitter = "@bunzing"
+mainSections = [ "episodes" ]
+
+  [params.author]
+  name = "Bunzing"
+  email = "hallo@bunzing.org"
+
+  [params.podcast]
+  description = "NAVO: De keerzijde van een verdrag"
+  tagline = "Ontdek wat er werkelijk achter de NAVO schuilt"
+  download_url = "https://b.bunzing.org/"
+  cdn_url = "https://b.bunzing.org/"
+  itunes_url = "https://podcasts.apple.com/us/podcast/bunzing/id100000000"
+  itunes_id = "id100000000"
