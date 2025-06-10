@@ -19,7 +19,7 @@ asset_link = "navo-intro.mp3"
 length = "112109285"
 
 [image]
-url = "images/navo-cover.png"
+url = "navo-cover.png"
 alt = "NAVO"
 +++
 
