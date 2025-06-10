@@ -42,7 +42,7 @@
         </itunes:owner>
         <itunes:block>no</itunes:block>
         <itunes:explicit>no</itunes:explicit>
-        <itunes:image href="{{.Site.BaseURL}}media/navo-cover.png"/>
+        <itunes:image href="{{.Site.Params.podcast.download_url}}media/navo-cover.png"/>
         {{ range (where .Site.RegularPages "Params.layout" "episode")}}
         {{ .Scratch.Set "asset" .Params.aac }}
         {{if eq $assetFormat "mp3"}}
@@ -54,7 +54,7 @@
             <pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:00 -0700" }}</pubDate>
             <description>{{ .Params.short_description }}</description>
 
-            <enclosure url='{{.Site.BaseURL}}{{ (.Scratch.Get "asset").asset_link | safeHTML }}'
+            <enclosure url='{{.Site.Params.podcast.download_url}}{{ (.Scratch.Get "asset").asset_link | safeHTML }}'
                        length='{{ (.Scratch.Get "asset").length }}' type="audio/{{$assetFormat}}"/>
             <guid>{{.Site.BaseURL}}{{ if .Params.guid }}{{ .Params.guid }}{{ else }}{{ .Params.number }}{{ end }}/</guid>
 
