@@ -22,6 +22,7 @@ mainSections = [ "episodes" ]
   cdn_url = "https://b.bunzing.org/"
   itunes_url = "https://podcasts.apple.com/us/podcast/bunzing/id100000000"
   itunes_id = "id100000000"
+  cover_image = "navo-cover.png"
 
 [outputFormats.aacfeed]
 MediaType = "application/rss+xml"

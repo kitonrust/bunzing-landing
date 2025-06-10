@@ -7,7 +7,7 @@ series_slug = "navo"
 number = "0"
 layout = "episode"
 eptype = "full"
-duration = "00:33:25"
+duration = "00:01:11"
 
 short_description = "Short blurb about this episode."
 url = "/aankondiging"
@@ -16,7 +16,11 @@ draft = false
 
 [mp3]
 asset_link = "navo-intro.mp3"
-length = "112109285"
+length = "1133908"
+
+[aac]
+asset_link = "navo-intro.m4a"
+length = "1180124"
 
 [image]
 url = "navo-cover.png"
