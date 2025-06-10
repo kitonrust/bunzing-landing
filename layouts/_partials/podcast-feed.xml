@@ -56,7 +56,7 @@
 
             <enclosure url='{{.Site.Params.podcast.download_url}}{{ (.Scratch.Get "asset").asset_link | safeHTML }}'
                        length='{{ (.Scratch.Get "asset").length }}' type="audio/{{$assetFormat}}"/>
-            <guid>{{.Site.BaseURL}}{{ if .Params.guid }}{{ .Params.guid }}{{ else }}{{ .Params.number }}{{ end }}/</guid>
+            <guid>{{.Site.BaseURL}}{{ if .Params.series_slug }}{{ .Params.series_slug }}/{{end}}{{ if .Params.guid }}{{ .Params.guid }}{{ else }}{{ .Params.number }}{{ end }}/</guid>
 
             <itunes:author>{{.Site.Params.author.name}}</itunes:author>
             <itunes:episode>{{ .Params.number }}</itunes:episode>
