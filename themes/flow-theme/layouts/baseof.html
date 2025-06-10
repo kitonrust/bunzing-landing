@@ -6,14 +6,20 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body>
+  <body class="bg-lime-950">
     <div class="max-w-screen-7xl">
       <!-- {{ partial "sticky-banner.html" }} -->
-      <header>{{ partial "header.html" . }}</header>
+      <header>{{ partial "navbar.html" . }}</header>
       <main>
-        {{ partial "hero.html" . }} {{ partial "countdown.html" . }} {{ block
-        "main" . }}{{ end }} {{ partial "more-info.html" . }} {{ partial
-        "testimonial.html" . }} {{ partial "team.html" . }}
+        <section>{{ partial "hero.html" . }}</section>
+        <section>{{ partial "platforms.html" . }}</section>
+        <section>{{ partial "countdown.html" . }}</section>
+        <section></section>
+        {{ block "main" . }}{{ end }}
+        <section>{{ partial "more-info.html" . }}</section>
+        <!-- <section>{{ partial "testimonial.html" . }}</section> -->
+        <section>{{ partial "team.html" . }}</section>
+        <section>{{ partial "cta.html" . }}</section>
       </main>
       <footer>{{ partial "footer.html" . }}</footer>
     </div>

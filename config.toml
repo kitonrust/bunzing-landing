@@ -1,4 +1,5 @@
 baseURL = 'https://example.org/'
 languageCode = 'nl-nl'
-title = 'Bunzing'
+title = 'Ontdek wat er werkelijk achter NAVO schuilgaat | Bunzing'
+description = ''
 theme = ["flow-theme"]
