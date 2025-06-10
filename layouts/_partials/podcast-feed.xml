@@ -10,7 +10,7 @@
      xmlns:media="http://search.yahoo.com/mrss/">
     <channel>
         {{ $assetFormat := .Scratch.Get "asset-format" }}
-        <title>{{ .Site.Title}}</title>
+        <title>{{.Site.Params.podcast.title}}</title>
         <atom:link href="{{.Site.BaseURL}}feed/{{$assetFormat}}/index.xml" rel="self" type="application/rss+xml"/>
         <link>{{.Site.BaseURL}}</link>
         <description>{{.Site.Params.podcast.description}}</description>

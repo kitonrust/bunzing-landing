@@ -13,8 +13,10 @@ mainSections = [ "episodes" ]
   name = "Bunzing"
   email = "hallo@bunzing.org"
 
+  
   [params.podcast]
-  description = "NAVO: De keerzijde van een verdrag"
+  title = "NAVO: De keerzijde van een verdrag"
+  description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Om West-Europese en Amerikaanse levens veilig te stellen. Maar wat gebeurde er werkelijk?"
   tagline = "Ontdek wat er werkelijk achter de NAVO schuilt"
   download_url = "https://b.bunzing.org/"
   cdn_url = "https://b.bunzing.org/"

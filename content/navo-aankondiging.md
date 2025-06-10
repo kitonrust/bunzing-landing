@@ -1,7 +1,7 @@
 +++
 date = 2025-06-06
 author = "Bunzing"
-title = "NAVO: De keerzijde van een verdrag"
+title = "Aankondiging"
 series_title = "NAVO: De keerzijde van een verdrag"
 series_slug = "navo"
 number = "0"
