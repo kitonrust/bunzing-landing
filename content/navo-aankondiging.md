@@ -1,5 +1,5 @@
 +++
-date = 2025-06-06
+date = 2025-06-10
 author = "Bunzing"
 title = "Aankondiging"
 series_title = "NAVO: De keerzijde van een verdrag"
@@ -9,7 +9,7 @@ layout = "episode"
 eptype = "full"
 duration = "00:01:11"
 
-short_description = "Short blurb about this episode."
+short_description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Om West-Europese en Amerikaanse levens veilig te stellen. Maar wat gebeurde er werkelijk?"
 url = "/aankondiging"
 tags = ["NAVO"]
 draft = false
