@@ -1,5 +1,9 @@
 ...
 
+```
+npm install
+```
+
 ## Run the CSS
 
 ```

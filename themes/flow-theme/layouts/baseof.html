@@ -8,18 +8,27 @@
   </head>
   <body class="bg-lime-950">
     <div class="max-w-screen-7xl">
-      <!-- {{ partial "sticky-banner.html" }} -->
       <header>{{ partial "navbar.html" . }}</header>
       <main>
-        <section>{{ partial "hero.html" . }}</section>
-        <section>{{ partial "platforms.html" . }}</section>
-        <section>{{ partial "countdown.html" . }}</section>
-        <section></section>
+        <section class="border-b border-lime-50">
+          {{ partial "hero.html" . }}
+        </section>
+        <section class="border-b border-lime-50">
+          {{ partial "platforms.html" . }}
+        </section>
+        <section class="border-b border-lime-50">
+          {{ partial "countdown.html" . }}
+        </section>
         {{ block "main" . }}{{ end }}
-        <section>{{ partial "more-info.html" . }}</section>
-        <!-- <section>{{ partial "testimonial.html" . }}</section> -->
-        <section>{{ partial "team.html" . }}</section>
-        <section>{{ partial "cta.html" . }}</section>
+        <section class="border-b border-lime-50">
+          {{ partial "more-info.html" . }}
+        </section>
+        <section class="mt-4 border-b border-lime-50">
+          {{ partial "team.html" . }}
+        </section>
+        <section class="mt-4 border-b border-lime-50">
+          {{ partial "cta.html" . }}
+        </section>
       </main>
       <footer>{{ partial "footer.html" . }}</footer>
     </div>
