@@ -3,3 +3,13 @@ languageCode = 'nl-nl'
 title = 'Ontdek wat er werkelijk achter NAVO schuilgaat | Bunzing'
 description = ''
 theme = ["flow-theme"]
+
+
+[params]
+facebook = "https://www.facebook.com/profile.php?id=61575103342803"
+instagram =  "#"
+linkedin = "https://www.linkedin.com/company/bunzing/"
+
+spotify = "#"
+youtube = "#"
+apple =  "#"
