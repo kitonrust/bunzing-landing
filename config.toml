@@ -32,8 +32,8 @@ apple =  "#"
   tagline = "Ontdek wat er werkelijk achter de NAVO schuilt"
   download_url = "https://b.bunzing.org/"
   cdn_url = "https://b.bunzing.org/"
-  itunes_url = "https://podcasts.apple.com/us/podcast/bunzing/id100000000"
-  itunes_id = "id100000000"
+  itunes_url = "https://podcasts.apple.com/us/podcast/navo-de-keerzijde-van-een-verdrag/id1820276755"
+  itunes_id = "id1820276755"
   cover_image = "navo-cover.png"
 
 [outputFormats.aacfeed]
