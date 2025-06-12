@@ -13,6 +13,12 @@ linkedin = "https://www.linkedin.com/company/bunzing/"
 twitter = "@bunzing"
 mastodon = "https://mstdn.social/@bunzing"
 
+opengraph_title = "NAVO: De keerzijde van een verdrag"
+opengraph_sitename = "Bunzing"
+opengraph_description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Maar wat gebeurde er werkelijk?"
+opengraph_image = "media/opengraph.png"
+opengraph_video = "media/navo.mp4"
+
 [params.contact]
 organisation = "Bunzing HK"
 location = "Amsterdam, Nederland"

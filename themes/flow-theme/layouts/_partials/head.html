@@ -1,5 +1,15 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
+
+<!-- Open Graph preview fields -->
+<meta property="og:title" content="{{ .Site.Params.opengraph_title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.opengraph_sitename }}"/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.opengraph_image }}" />
+<meta property="og:video" content="{{ .Site.BaseURL }}{{ .Site.Params.opengraph_video }}" />
+<meta property="og:description" content="{{ .Site.Params.opengraph_description }}" />
+
 <title>
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}
