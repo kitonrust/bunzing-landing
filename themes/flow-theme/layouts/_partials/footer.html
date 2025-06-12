@@ -91,7 +91,7 @@
               
 
                             <!-- Apple podcasts -->
-                            <a href="#" class="text-lime-100 hover:text-red-500">
+                            <a href="{{ .Site.Params.podcast.itunes_url }}" class="text-lime-100 hover:text-red-500">
                               <svg
                                 aria-hidden="true"
                                 class="w-6 h-6"
@@ -108,7 +108,7 @@
                             </a>              
 
               <!-- RSS -->
-              <a href="#" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.BaseURL}}feed/mp3/index.xml" class="text-lime-100 hover:text-red-500">
                 <svg
                 class="h-6 w-6" fill="currentColor"
           aria-hidden="true"
