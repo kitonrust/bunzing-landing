@@ -13,6 +13,11 @@ linkedin = "https://www.linkedin.com/company/bunzing/"
 twitter = "@bunzing"
 mastodon = "https://mstdn.social/@bunzing"
 
+[params.contact]
+organisation = "Bunzing HK"
+location = "Amsterdam, Nederland"
+email = "hallo@bunzing.org"
+
 spotify = "#"
 youtube = "#"
 apple =  "#"
