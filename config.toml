@@ -20,7 +20,6 @@ email = "hallo@bunzing.org"
 
 spotify = "#"
 youtube = "#"
-apple =  "#"
 
   [params.author]
   name = "Bunzing"
