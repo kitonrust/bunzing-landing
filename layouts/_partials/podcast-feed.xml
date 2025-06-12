@@ -27,13 +27,15 @@
         <itunes:subtitle>{{.Site.Params.podcast.tagline}}</itunes:subtitle>
         <itunes:summary>{{.Site.Params.podcast.description}}</itunes:summary>
         <itunes:keywords></itunes:keywords>
-        <!-- <itunes:category text="Society &amp; Culture"/>
-        <itunes:category text="Technology"/> -->
         
         <itunes:category text="Society &amp; Culture">
-       </itunes:category>
-        <itunes:category text="Technology">
-       </itunes:category>
+            <itunes:category text="Documentary"/>
+        </itunes:category>
+        <itunes:category text="News">
+            <itunes:category text="Politics"/>
+        </itunes:category>
+        <itunes:category text="History">
+        </itunes:category>
 
         <itunes:author>{{.Site.Params.author.name}}</itunes:author>
         <itunes:owner>
