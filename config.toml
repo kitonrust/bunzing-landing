@@ -13,6 +13,9 @@ linkedin = "https://www.linkedin.com/company/bunzing/"
 twitter = "@bunzing"
 mastodon = "https://mstdn.social/@bunzing"
 
+spotify = "https://open.spotify.com/show/0lnivLTo5SVGLNvDmcCkYX"
+youtube = "#"
+
 opengraph_title = "NAVO: De keerzijde van een verdrag"
 opengraph_sitename = "Bunzing"
 opengraph_description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Maar wat gebeurde er werkelijk?"
@@ -24,8 +27,7 @@ organisation = "Bunzing HK"
 location = "Amsterdam, Nederland"
 email = "hallo@bunzing.org"
 
-spotify = "https://open.spotify.com/show/0lnivLTo5SVGLNvDmcCkYX"
-youtube = "#"
+
 
   [params.author]
   name = "Bunzing"
