@@ -24,7 +24,7 @@ organisation = "Bunzing HK"
 location = "Amsterdam, Nederland"
 email = "hallo@bunzing.org"
 
-spotify = "#"
+spotify = "https://open.spotify.com/show/0lnivLTo5SVGLNvDmcCkYX"
 youtube = "#"
 
   [params.author]
