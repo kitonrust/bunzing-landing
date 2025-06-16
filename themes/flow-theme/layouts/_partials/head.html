@@ -5,6 +5,24 @@
   data-key="j5ofRdBycquULAK+NDbbaw"
   async
 ></script>
+
+<!-- Open Graph preview fields -->
+<meta property="og:title" content="{{ .Site.Params.opengraph_title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.opengraph_sitename }}"/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Site.BaseURL }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.opengraph_image }}" />
+<!-- <meta property="og:video" content="{{ .Site.BaseURL }}{{ .Site.Params.opengraph_video }}" /> -->
+<meta property="og:description" content="{{ .Site.Params.opengraph_description }}" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="bunzing.org">
+<meta property="twitter:url" content="{{ .Site.BaseURL }}">
+<meta name="twitter:title" content="{{ .Site.Params.opengraph_title }}">
+<meta name="twitter:description" content="{{ .Site.Params.opengraph_description }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Site.Params.opengraph_image }}">
+
 <title>
   {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
   site.Title }}{{ end }}

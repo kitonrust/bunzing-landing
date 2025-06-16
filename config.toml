@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://bunzing.org/'
 languageCode = 'nl-nl'
 title = 'Ontdek wat er werkelijk achter NAVO schuilgaat | Bunzing'
 description = ''
@@ -13,9 +13,21 @@ linkedin = "https://www.linkedin.com/company/bunzing/"
 twitter = "@bunzing"
 mastodon = "https://mstdn.social/@bunzing"
 
-spotify = "#"
+spotify = "https://open.spotify.com/show/0lnivLTo5SVGLNvDmcCkYX"
 youtube = "#"
-apple =  "#"
+
+opengraph_title = "NAVO: De keerzijde van een verdrag"
+opengraph_sitename = "Bunzing"
+opengraph_description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Maar wat gebeurde er werkelijk?"
+opengraph_image = "media/opengraph.png"
+opengraph_video = "media/navo.mp4"
+
+[params.contact]
+organisation = "Bunzing HK"
+location = "Amsterdam, Nederland"
+email = "hallo@bunzing.org"
+
+
 
   [params.author]
   name = "Bunzing"
@@ -27,8 +39,8 @@ apple =  "#"
   tagline = "Ontdek wat er werkelijk achter de NAVO schuilt"
   download_url = "https://b.bunzing.org/"
   cdn_url = "https://b.bunzing.org/"
-  itunes_url = "https://podcasts.apple.com/us/podcast/bunzing/id100000000"
-  itunes_id = "id100000000"
+  itunes_url = "https://podcasts.apple.com/us/podcast/navo-de-keerzijde-van-een-verdrag/id1820276755"
+  itunes_id = "id1820276755"
   cover_image = "navo-cover.png"
 
 [outputFormats.aacfeed]

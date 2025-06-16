@@ -1,5 +1,6 @@
-<form class="max-w-sm mx-auto">
+<form method="post" action="https://post.provo.lol/subscription/form" class="max-w-sm mx-auto">
   <div class="mb-5">
+    <input type="hidden" name="nonce" />
     <label
       for="email"
       class="block mb-2 text-sm font-medium font-sans text-lime-100 text-left"
@@ -9,16 +10,18 @@
     <input
       type="email"
       id="email"
+      name="email"
       class="bg-lime-50 border border-gray-300 text-gray-900 text-base focus:ring-red-500 focus:border-red-500 block w-full p-2.5"
-      placeholder="naam@bunzing.nl"
+      placeholder="{{ .Site.Params.contact.email }}"
       required
     />
+   <input id="ea600" type="hidden" name="l" checked value="ea600753-ea04-492b-98b9-c999b6fe0b5c" /> 
   <button
     type="submit"
-    class="font-sans text-lime-50 bg-red-500 rounded-2xl hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-600 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center md:ml-4 mt-4 md:mt-0"
-  >
+    value="subscribe"
+    class="font-sans text-lime-50 bg-red-500 rounded-2xl hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-600 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center md:ml-4 mt-4 md:mt-0">
     Inschrijven
   </button>
-  </div>
+</div>
 </span>
 </form>

@@ -57,7 +57,7 @@
               </a>
               
               <!-- Spotify -->
-              <a href="#" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.spotify }}" class="text-lime-100 hover:text-red-500">
                 <svg
                   aria-hidden="true"
                   class="h-6 w-6" fill="currentColor"                 data-icon="spotify"
@@ -91,7 +91,7 @@
               
 
                             <!-- Apple podcasts -->
-                            <a href="#" class="text-lime-100 hover:text-red-500">
+                            <a href="{{ .Site.Params.podcast.itunes_url }}" class="text-lime-100 hover:text-red-500">
                               <svg
                                 aria-hidden="true"
                                 class="w-6 h-6"
@@ -108,7 +108,7 @@
                             </a>              
 
               <!-- RSS -->
-              <a href="#" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.BaseURL}}feed/mp3/index.xml" class="text-lime-100 hover:text-red-500">
                 <svg
                 class="h-6 w-6" fill="currentColor"
           aria-hidden="true"
@@ -132,11 +132,11 @@
           </p>
           <ul class="text-lime-100 font-light">
             <li class="">
-              <p>Bunzing HK</p>
-              <p>Amsterdam, Nederland</p>
+              <p>{{ .Site.Params.contact.organisation }}</p>
+              <p>{{ .Site.Params.contact.location }}</p>
             </li>
             <li>
-              <p>hey@bunzing.nl</p>
+              <p>{{ .Site.Params.contact.email }}</p>
             </li>
           </ul>
         </div>
