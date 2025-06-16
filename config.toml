@@ -8,11 +8,11 @@ theme = ["flow-theme"]
 [params]
 mainSections = [ "episodes" ]
 facebook = "https://www.facebook.com/profile.php?id=61575103342803"
-instagram =  "#"
+instagram =  "https://www.instagram.com/bunzingorg/"
 linkedin = "https://www.linkedin.com/company/bunzing/"
-twitter = "@bunzing"
+# twitter = "@bunzing"
 mastodon = "https://mstdn.social/@bunzing"
-
+substack = "https://bunzing.substack.com"
 spotify = "https://open.spotify.com/show/0lnivLTo5SVGLNvDmcCkYX"
 youtube = "#"
 
