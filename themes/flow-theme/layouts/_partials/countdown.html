@@ -39,7 +39,7 @@
 
 <script>
   // Set the date to count down to
-  const launchDate = new Date("2025-06-24 00:00:00").getTime();
+  const launchDate = new Date("2025-06-24 12:00:00").getTime();
 
   // Update the countdown every 1 second
   const countdown = setInterval(function () {
@@ -64,7 +64,7 @@
     if (distance < 0) {
       clearInterval(countdown);
       document.getElementById("countdown").innerHTML =
-        "<p class='text-xl text-red-500 font-bold'>It's live!</p>";
+        "<p class='text-xl text-red-500 font-bold'>Luister nu!</p>";
     }
   }, 1000);
 </script>
