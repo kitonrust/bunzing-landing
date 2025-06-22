@@ -1,5 +1,5 @@
 baseURL = 'https://bunzing.org/'
-languageCode = 'nl-nl'
+languageCode = 'nl'
 title = 'Ontdek wat er werkelijk achter NAVO schuilgaat | Bunzing'
 description = ''
 theme = ["flow-theme"]
