@@ -18,7 +18,7 @@
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <language>en</language>
-        <copyright>Copyleft &#xA9; {{.Site.Title}}</copyright>
+        <copyright>{{.Site.Title}}</copyright>
         <managingEditor>{{.Site.Params.author.email}} ({{ .Site.Params.author.name }})</managingEditor>
         <webMaster>{{.Site.Params.author.email}} ({{ .Site.Params.author.name }})</webMaster>
 
