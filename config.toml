@@ -14,7 +14,7 @@ linkedin = "https://www.linkedin.com/company/bunzing/"
 mastodon = "https://mstdn.social/@bunzing"
 substack = "https://bunzing.substack.com"
 spotify = "https://open.spotify.com/show/0lnivLTo5SVGLNvDmcCkYX"
-youtube = "#"
+youtube = "https://www.youtube.com/@BunzingOrgg/"
 
 opengraph_title = "NAVO: De keerzijde van een verdrag"
 opengraph_sitename = "Bunzing"
