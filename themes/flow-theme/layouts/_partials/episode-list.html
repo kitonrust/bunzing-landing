@@ -1,12 +1,14 @@
 <section class="mt-12">
-  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+  <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-6">
     <h2
       class="mb-4 text-center text-4xl font-extrabold tracking-tight leading-tight text-lime-50"
     >
       Afleveringen
     </h2>
-    <ul class="space-y-4">
-      {{ range .Site.RegularPages.ByParam "number" }}
+    <ul class="space-y-4 text-lime-50">
+      {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections
+      }} {{ range $pages.GroupByPublishDate "2006-01" }} {{ range sort .Pages
+      "PublishDate" "asc" }}
       <li class="border-b border-lime-100 py-6 text-xl">
         <a href="{{ .RelPermalink }}">
           <h3
@@ -24,7 +26,7 @@
         <p class="text-lime-100">{{ $totalMinutes }} min.</p>
         {{ end }}
       </li>
-      {{ end }}
+      {{end}} {{end}}
     </ul>
   </div>
 </section>

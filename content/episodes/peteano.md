@@ -1,5 +1,5 @@
 +++
-date = 2025-06-10
+date = "2025-06-10T12:00:04+0200"
 author = "Bunzing"
 title = "Peteano"
 series_title = "NAVO: De keerzijde van een verdrag"
