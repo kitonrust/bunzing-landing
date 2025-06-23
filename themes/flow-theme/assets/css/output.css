@@ -65,6 +65,7 @@
     --leading-tight: 1.25;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
+    --blur-lg: 16px;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -328,6 +329,11 @@
   .inline-flex {
     display: inline-flex;
   }
+
+  .table {
+    display: table;
+  }
+
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -409,11 +415,22 @@
   .flex-1 {
     flex: 1;
   }
+
+  .flex-shrink {
+    flex-shrink: 1;
+  }
+
   .flex-shrink-0 {
     flex-shrink: 0;
   }
   .shrink-0 {
     flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -784,6 +801,10 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .hover\:bg-gray-100 {
     &:hover {
@@ -1439,6 +1460,11 @@ a {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-shadow {
   syntax: "*";
   inherits: false;
@@ -1523,6 +1549,7 @@ a {
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
