@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="my-12 bg-[url(/media/navo.png)]">{{ partial "audio.html" . }}</div>
+<div class="my-12 bg-red-500">{{ partial "audio.html" . }}</div>
 <div class="mx-auto max-w-screen-xl py:12 lg:py-16 lg:px-12">
   <h1 class="text-lime-50 mb-2 text-5xl md:text-6xl tracking-tight font-bold">
     {{ .Title }}
@@ -14,4 +14,5 @@
     {{ .Content }}
   </div>
 </div>
-{{ partial "episodes-other.html" . }} {{ end }}
+<!-- {{ partial "episodes-other.html" . }}  -->
+{{ end }}
