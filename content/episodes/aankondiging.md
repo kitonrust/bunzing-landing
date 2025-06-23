@@ -28,8 +28,4 @@ url = "navo-cover.png"
 alt = "NAVO: De Keerzijde van een Verdrag"
 +++
 
-De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Om West-Europese en Amerikaanse levens veilig te stellen. Maar wat gebeurde er werkelijk?
-
-NAVO: De keerzijde van een verdrag is een zevendelige podcast over de schokkende andere kant van het Noord-Atlantisch verdrag. De verborgen explosieven. De terreuraanlagen. De binnenlandse sabotage.
-
-Ontdek het allemaal.
+De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Om West-Europese en Amerikaanse levens veilig te stellen. Maar wat gebeurde er werkelijk? *NAVO: De keerzijde van een verdrag* is een zevendelige podcast over de schokkende andere kant van het Noord-Atlantisch verdrag. De verborgen explosieven. De terreuraanlagen. De binnenlandse sabotage. Ontdek het allemaal.
