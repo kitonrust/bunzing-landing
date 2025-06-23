@@ -13,7 +13,7 @@ duration = "00:20:00"
 short_description = "Zal het de minister lukken om bij het Atlantisch pact concessies voor Nederland los te krijgen?"
 url = "/het-einde-van-nederland"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = false
+draft = true
 
 [mp3]
 asset_link = "navo-intro.mp3"

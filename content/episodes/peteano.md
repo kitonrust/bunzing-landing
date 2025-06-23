@@ -13,7 +13,7 @@ duration = "00:20:00"
 short_description = "Wie zat er achter de autobom in 1972 in Peteano, Italië? Een geheim netwerk wordt ontrafeld."
 url = "/peteano"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = false
+draft = true
 
 [mp3]
 asset_link = "..."

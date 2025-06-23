@@ -13,7 +13,7 @@ duration = "00:20:00"
 short_description = "In 1991 valt de Sovjet-Unie. Waarom houdt de NAVO dan niet op te bestaan?"
 url = "/humanitaire-interventie"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = false
+draft = true
 
 [mp3]
 asset_link = "..."

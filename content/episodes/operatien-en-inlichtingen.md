@@ -13,7 +13,7 @@ duration = "00:20:00"
 short_description = "Italië wordt geschokt door de onthulling van een geheim NAVO-netwerk. Ook Nederland wil opheldering. Komt die er?"
 url = "/operatien-en-inlichtingen"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = false
+draft = true
 
 [mp3]
 asset_link = "..."
