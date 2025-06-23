@@ -1,4 +1,4 @@
-<section class="my-12">
+<section class="mt-12">
   <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
     <h2
       class="mb-4 text-center text-4xl font-extrabold tracking-tight leading-tight text-lime-50"
@@ -7,13 +7,14 @@
     </h2>
     <ul class="space-y-4">
       {{ range .Site.RegularPages.ByParam "number" }}
-      <!-- <a href="{{ .RelPermalink }}"> -->
       <li class="border-b border-lime-100 py-6 text-xl">
-        <h3
-          class="mb-1 text-xl md:text-2xl font-bold tracking-tight text-lime-50"
-        >
-          {{ .Params.Number }}. {{ .Title }}
-        </h3>
+        <a href="{{ .RelPermalink }}">
+          <h3
+            class="mb-1 text-xl md:text-2xl font-bold tracking-tight text-lime-50 hover:text-red-500"
+          >
+            {{ .Params.Number }}. {{ .Title }}
+          </h3>
+        </a>
         <p class="text-lime-100 py-2">{{ .Params.short_description }}</p>
         {{ if .Params.Duration }} {{ $parts := split .Params.Duration ":" }} {{
         $hours := int (index $parts 0) }} {{ $minutes := int (index $parts 1) }}
@@ -23,7 +24,6 @@
         <p class="text-lime-100">{{ $totalMinutes }} min.</p>
         {{ end }}
       </li>
-      <!-- </a> -->
       {{ end }}
     </ul>
   </div>
