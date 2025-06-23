@@ -5,7 +5,7 @@ description = 'De NAVO had om vrede moeten gaan. Maar wat gebeurde er werkelijk?
 theme = ["flow-theme"]
 
 [params]
-mainSections = [ "episodes" ]
+mainSections = [ "posts" ]
 facebook = "https://www.facebook.com/profile.php?id=61575103342803"
 instagram =  "https://www.instagram.com/bunzingorg/"
 linkedin = "https://www.linkedin.com/company/bunzing/"
@@ -61,9 +61,3 @@ Rel = "alternate"
 
 [outputs]
 home = [ "HTML", "AMP", "RSS", "aacfeed", "mp3feed" ]
-
-# disableKinds = ["categories", "tags"]
-
-# [taxonomies]
-#     category = "categories"
-#     tag = "tags"
