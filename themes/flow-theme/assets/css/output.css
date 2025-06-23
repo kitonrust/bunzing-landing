@@ -329,9 +329,11 @@
   .inline-flex {
     display: inline-flex;
   }
+
   .table {
     display: table;
   }
+
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -413,9 +415,11 @@
   .flex-1 {
     flex: 1;
   }
+
   .flex-shrink {
     flex-shrink: 1;
   }
+
   .flex-shrink-0 {
     flex-shrink: 0;
   }

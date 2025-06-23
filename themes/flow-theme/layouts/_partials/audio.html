@@ -1,0 +1,27 @@
+<div
+  class="my-10 w-full max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl mx-auto bg-red-500 overflow-hidden"
+>
+  <img
+    src="/media/navo.png"
+    alt="NAVO: De keerzijde van een verdrag"
+    class="w-full aspect-square md:w-48 md:h-48 object-cover mx-auto md:mt-6 border-red-500 border-2 md:border-lime-100"
+  />
+  <div class="p-4">
+    <p class="text-lg mb-2 text-lime-100 tracking-tight font-light">
+      {{ .Params.date_nl }}
+    </p>
+    <h2 class="text-xl font-semibold mb-2 text-lime-50">
+      <!-- {{ .Params.title }} | Aflevering {{ .Params.number }}  -->
+      {{ .Params.title }} {{ if gt (int .Params.Number) 0 }} | Aflevering {{
+      .Params.Number }} {{ end }}
+    </h2>
+    <p class="text-lg text-lime-100 mb-4">{{ .Params.series_title }}</p>
+    <audio controls class="w-full bg-lime-50 rounded-full">
+      <source
+        src="{{ .Site.Params.podcast.download_url }}{{ .Params.mp3.asset_link }}"
+        type="audio/mpeg"
+      />
+      Uw browser ondersteunt geen HTML audio.
+    </audio>
+  </div>
+</div>
