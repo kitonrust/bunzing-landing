@@ -1,9 +1,8 @@
 baseURL = 'https://bunzing.org/'
 languageCode = 'nl'
 title = 'Ontdek wat er werkelijk achter NAVO schuilgaat | Bunzing'
-description = ''
+description = 'De NAVO had om vrede moeten gaan. Maar wat gebeurde er werkelijk? Ontdek het allemaal.'
 theme = ["flow-theme"]
-
 
 [params]
 mainSections = [ "episodes" ]
@@ -18,7 +17,7 @@ youtube = "https://www.youtube.com/@BunzingOrgg/"
 
 opengraph_title = "NAVO: De keerzijde van een verdrag"
 opengraph_sitename = "Bunzing"
-opengraph_description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Maar wat gebeurde er werkelijk?"
+opengraph_description = "De NAVO had om vrede moeten gaan. Maar wat gebeurde er werkelijk? Ontdek het allemaal."
 opengraph_image = "media/opengraph.png"
 opengraph_video = "media/navo.mp4"
 
@@ -27,15 +26,13 @@ organisation = "Bunzing HK"
 location = "Amsterdam, Nederland"
 email = "hallo@bunzing.org"
 
-
-
   [params.author]
   name = "Bunzing"
   email = "hallo@bunzing.org"
 
   [params.podcast]
   title = "NAVO: De keerzijde van een verdrag"
-  description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Om West-Europese en Amerikaanse levens veilig te stellen. Maar wat gebeurde er werkelijk?"
+  description = "De Noord-Atlantische Verdragsorganisatie (NAVO) had om vrede moeten gaan. Een verdrag ter verdediging. Om West-Europese en Amerikaanse levens veilig te stellen. Maar wat gebeurde er werkelijk? Ontdekt het allemaal."
   tagline = "Ontdek wat er werkelijk achter de NAVO schuilt"
   download_url = "https://b.bunzing.org/"
   cdn_url = "https://b.bunzing.org/"
@@ -64,3 +61,8 @@ Rel = "alternate"
 [outputs]
 home = [ "HTML", "AMP", "RSS", "aacfeed", "mp3feed" ]
 
+# disableKinds = ["categories", "tags"]
+
+# [taxonomies]
+#     category = "categories"
+#     tag = "tags"
