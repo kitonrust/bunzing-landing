@@ -1,0 +1,61 @@
+<section class="mt-12 border-t-2 border-lime-100">
+  <div class="mx-auto max-w-screen-xl py:12 lg:py-16 lg:px-12">
+    <h2
+      class="mt-12 mb-4 text-4xl font-bold tracking-tight leading-tight text-lime-50"
+    >
+      Meer afleveringen:
+    </h2>
+    <ul class="my-4 text-lime-50">
+      {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections
+      }} {{ range $pages.GroupByPublishDate "2006-01" }} {{ range sort .Pages
+      "PublishDate" "asc" }} {{ if ne .Params.Number $.Params.Number }}
+      <li class="border-b border-lime-100 py-6 text-xl flex items-start gap-4">
+        <!-- Left: Square Image -->
+        <div class="w-24 h-24 flex-shrink-0 border border-1 border-lime-100">
+          <img
+            src="/media/navo.png"
+            alt="{{
+          .Title }}"
+            class="object-cover w-full h-full rounded"
+          />
+        </div>
+
+        <!-- Right: Episode content -->
+        <div class="flex-1">
+          {{ if .Params.Duration }} {{ $parts := split .Params.Duration ":" }}
+          {{ $hours := int (index $parts 0) }} {{ $minutes := int (index $parts
+          1) }} {{ $seconds := int (index $parts 2) }} {{ $totalMinutes := add
+          (mul $hours 60) $minutes }} {{ if gt $seconds 0 }} {{ $totalMinutes =
+          add $totalMinutes 1 }} {{ end }}
+          <p class="text-lime-100 mb-4 flex items-center text-sm">
+            <svg
+              class="mr-2"
+              width="1em"
+              height="0.8em"
+              viewBox="0 0 10 10"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 5.49375C9.94997 2.45 7.72983 0 5.00313 0C2.27642 0 0.0562852 2.45 0 5.49375V9.79375C0.419012 9.925 0.83177 10 1.18824 10C2.51407 10 3.46467 9.04375 3.46467 7.7125C3.46467 6.29375 2.38899 5.3375 1.05691 5.3375C0.913071 5.3375 0.644153 5.39375 0.587867 5.39375C0.650407 4.08125 1.08193 2.9 1.80113 2.0125C2.67042 1.31875 3.78361 0.9 4.99687 0.9C6.21013 0.9 7.32958 1.31875 8.19262 2.0125C8.91807 2.9 9.34959 4.0875 9.40588 5.4C9.35585 5.4 9.08068 5.33125 8.93684 5.33125C7.60475 5.33125 6.52908 6.2875 6.52908 7.70625C6.52908 9.0375 7.47342 9.99375 8.8055 9.99375C9.16198 9.99375 9.57473 9.925 9.99375 9.7875V5.48125L10 5.49375Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            {{ $totalMinutes }} min.
+          </p>
+          {{ end }}
+          <a href="{{ .RelPermalink }}">
+            <h3
+              class="mb-1 text-xl md:text-2xl font-bold tracking-tight text-lime-50 hover:text-red-500"
+            >
+              {{ .Title }}{{ if gt (int .Params.Number) 0 }} | Afl. {{
+              .Params.Number }} {{ end }}
+            </h3>
+          </a>
+          <p class="text-lime-100 py-2">{{ .Params.short_description }}</p>
+        </div>
+      </li>
+      {{end}} {{end}} {{ end }}
+    </ul>
+  </div>
+</section>

@@ -1,9 +1,17 @@
 {{ define "main" }}
-<h1 class="text-blue-500">{{ .Title }}</h1>
+<div class="my-12 bg-[url(/media/navo.png)]">{{ partial "audio.html" . }}</div>
+<div class="mx-auto max-w-screen-xl py:12 lg:py-16 lg:px-12">
+  <h1 class="text-lime-50 mb-2 text-5xl md:text-6xl tracking-tight font-bold">
+    {{ .Title }}
+  </h1>
+  {{ if gt (int .Params.Number) 0 }}
+  <p class="text-lime-100 mb-6 text-2xl tracking-tight">
+    {{ .Params.series_title }} | Aflevering {{ .Params.Number }}
+  </p>
+  {{ end }}
 
-{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }} {{
-$dateHuman := .Date | time.Format ":date_long" }}
-<time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-
-{{ .Content }} {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }} {{
-end }}
+  <div class="text-lime-100 text-lg md:mr-auto md:max-w-4xl">
+    {{ .Content }}
+  </div>
+</div>
+{{ partial "episodes-other.html" . }} {{ end }}

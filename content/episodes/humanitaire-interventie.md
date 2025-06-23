@@ -1,11 +1,12 @@
 +++
 date = "2025-06-10T12:00:06+0200"
+date_nl = "24 juni 2025"
 author = "Bunzing"
-title = "Humanitaire Interventie"
+title = "Humanitaire interventie"
 series_title = "NAVO: De keerzijde van een verdrag"
 series_slug = "navo"
 number = "6"
-layout = "episode"
+layout = "single"
 eptype = "full"
 duration = "00:20:00"
 

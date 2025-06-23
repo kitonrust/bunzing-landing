@@ -1,15 +1,16 @@
 +++
 date = "2025-06-10T12:00:07+0200"
+date_nl = "24 juni 2025"
 author = "Bunzing"
 title = "Eruit?"
 series_title = "NAVO: De keerzijde van een verdrag"
 series_slug = "navo"
 number = "7"
-layout = "episode"
+layout = "single"
 eptype = "full"
 duration = "00:20:00"
 
-short_description = "In veel landen gaan stemmen op om uit het pact te stappen. Is er leven na de NAVO?"
+short_description = "In veel landen gaan stemmen op om uit het Atlantisch pact te stappen. Is er leven na de NAVO?"
 url = "/eruit"
 tags = ["NAVO", "politiek", "geschiedenis"]
 draft = false

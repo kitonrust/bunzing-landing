@@ -1,11 +1,12 @@
 +++
 date = "2025-06-10T12:00:01+0200"
+date_nl = "24 juni 2025"
 author = "Bunzing"
-title = "Het Einde van Nederland"
+title = "Het einde van Nederland"
 series_title = "NAVO: De keerzijde van een verdrag"
 series_slug = "navo"
 number = "1"
-layout = "episode"
+layout = "single"
 eptype = "full"
 duration = "00:20:00"
 

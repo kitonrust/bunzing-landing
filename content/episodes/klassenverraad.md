@@ -1,11 +1,12 @@
 +++
 date = "2025-06-10T12:00:02+0200"
+date_nl = "24 juni 2025"
 author = "Bunzing"
 title = "Klassenverraad"
 series_title = "NAVO: De keerzijde van een verdrag"
 series_slug = "navo"
 number = "2"
-layout = "episode"
+layout = "single"
 eptype = "full"
 duration = "00:20:00"
 
@@ -27,4 +28,4 @@ url = "navo-cover.png"
 alt = "NAVO: De Keerzijde van een Verdrag"
 +++
 
-Minister Stikker tekende het Atlantisch Pact namens Nederland, zonder dat de bevolking is geraadpleegd. Er worden kamervragen gesteld. Door heel het land protesteren arbeiders en vrouwenbewegingen. En zaten er geheime clausules aan het pact verbonden?
+Minister Stikker tekende het Atlantisch Pact namens Nederland, zonder dat de bevolking is geraadpleegd. Er worden kamervragen gesteld. Door heel het land protesteren arbeiders en vrouwenbewegingen. Zaten er misschien geheime clausules aan het pact verbonden?

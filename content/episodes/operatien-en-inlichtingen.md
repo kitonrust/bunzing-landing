@@ -1,11 +1,12 @@
 +++
 date = "2025-06-10T12:00:05+0200"
+date_nl = "24 juni 2025"
 author = "Bunzing"
 title = "Operatiën en Inlichtingen"
 series_title = "NAVO: De keerzijde van een verdrag"
 series_slug = "navo"
 number = "5"
-layout = "episode"
+layout = "single"
 eptype = "full"
 duration = "00:20:00"
 
