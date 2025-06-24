@@ -64,7 +64,6 @@
             <itunes:author>{{.Site.Params.author.name}}</itunes:author>
             <itunes:season>{{ .Params.season }}</itunes:season>
             <itunes:episode>{{ .Params.number }}</itunes:episode>
-            <itunes:episodeType>{{ .Params.episodetype }}</itunes:episodeType>
             <itunes:explicit> {{ .Params.explicit }}</itunes:explicit>
             <itunes:title>{{ .Params.title }}</itunes:title>
             <itunes:summary>{{ .Params.short_description | plainify }}</itunes:summary>
@@ -73,7 +72,7 @@
             
             <itunes:duration>{{ .Params.duration }}</itunes:duration>
             <itunes:keywords>{{ delimit .Params.tags ", " }}</itunes:keywords>
-            <itunes:episodeType>{{ .Params.eptype }}</itunes:episodeType>
+            <itunes:episodeType>{{ .Params.episodetype }}</itunes:episodeType>
         </item>
 
         {{end}}
