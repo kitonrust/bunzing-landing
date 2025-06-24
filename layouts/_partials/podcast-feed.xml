@@ -61,7 +61,7 @@
             <guid>{{.Site.BaseURL}}{{ if .Params.series_slug }}{{ .Params.series_slug }}/{{end}}{{ if .Params.guid }}{{ .Params.guid }}{{ else }}{{ .Params.number }}{{ end }}/</guid>
             <itunes:image href="{{.Site.Params.podcast.download_url}}{{ .Params.image.url}}"></itunes:image>
             <itunes:author>{{.Site.Params.author.name}}</itunes:author>
-            <itunes:season>{{ .Params.number-season }}</itunes:season>
+            <itunes:season>{{ .Params.season }}</itunes:season>
             <itunes:episode>{{ .Params.number }}</itunes:episode>
             <itunes:title>{{ .Params.title }}</itunes:title>
             <itunes:summary>{{ .Params.short_description | plainify }}</itunes:summary>
