@@ -45,7 +45,7 @@
         <itunes:block>no</itunes:block>
         <itunes:explicit>no</itunes:explicit>
         <itunes:image href="{{.Site.Params.podcast.download_url}}{{.Site.Params.podcast.cover_image}}"/>
-        {{ range (where .Site.RegularPages "Params.layout" "episode")}}
+        {{ range (where .Site.RegularPages "Params.layout" "single")}}
         {{ .Scratch.Set "asset" .Params.aac }}
         {{if eq $assetFormat "mp3"}}
         {{ .Scratch.Set "asset" .Params.mp3 }}
