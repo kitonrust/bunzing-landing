@@ -8,7 +8,7 @@ series_slug = "navo"
 number = "3"
 layout = "single"
 eptype = "full"
-duration = "00:20:00"
+duration = "00:20:10"
 
 short_description = "Nederland protesteert grootschalig tegen kernwapens. Tóch worden ze geplaatst. Wat is hier aan de hand?"
 url = "/de-bom"
@@ -16,12 +16,12 @@ tags = ["NAVO", "politiek", "geschiedenis"]
 draft = true
 
 [mp3]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-3.mp3"
+length = "15996783"
 
 [aac]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-3.mp3"
+length = "15996783"
 
 [image]
 url = "navo-cover.png"

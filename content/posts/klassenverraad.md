@@ -8,7 +8,7 @@ series_slug = "navo"
 number = "2"
 layout = "single"
 eptype = "full"
-duration = "00:20:00"
+duration = "00:20:24"
 
 short_description = "Nederland komt bij het Atlantisch Pact, zonder dat de bevolking is geraadpleegd. De arbeiders zijn woest."
 url = "/klassenverraad"
@@ -16,12 +16,12 @@ tags = ["NAVO", "politiek", "geschiedenis"]
 draft = true
 
 [mp3]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-2.mp3"
+length = "15131823"
 
 [aac]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-2.mp3"
+length = "15131823"
 
 [image]
 url = "navo-cover.png"
