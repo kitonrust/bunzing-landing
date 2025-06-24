@@ -8,20 +8,20 @@ series_slug = "navo"
 number = "1"
 layout = "single"
 eptype = "full"
-duration = "00:20:00"
+duration = "00:18:49"
 
 short_description = "Zal het de minister lukken om bij het Atlantisch pact concessies voor Nederland los te krijgen?"
 url = "/het-einde-van-nederland"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = true
+draft = false
 
 [mp3]
-asset_link = "navo-intro.mp3"
-length = "1133908"
+asset_link = "bunzing-navo-aflevering-1.mp3"
+length = "15131823"
 
 [aac]
-asset_link = "navo-intro.m4a"
-length = "1180124"
+asset_link = "bunzing-navo-aflevering-1.mp3"
+length = "15131823"
 
 [image]
 url = "navo-cover.png"

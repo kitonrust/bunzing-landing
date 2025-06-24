@@ -8,20 +8,20 @@ series_slug = "navo"
 number = "4"
 layout = "single"
 eptype = "full"
-duration = "00:20:00"
+duration = "00:25:25"
 
 short_description = "Wie zat er achter de autobom in 1972 in Peteano, Italië? Een geheim netwerk wordt ontrafeld."
 url = "/peteano"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = true
+draft = false
 
 [mp3]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-4.mp3"
+length = "19635015"
 
 [aac]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-4.mp3"
+length = "19635015"
 
 [image]
 url = "navo-cover.png"

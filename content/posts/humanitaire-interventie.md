@@ -8,20 +8,20 @@ series_slug = "navo"
 number = "6"
 layout = "single"
 eptype = "full"
-duration = "00:20:00"
+duration = "00:25:22"
 
 short_description = "In 1991 valt de Sovjet-Unie. Waarom houdt de NAVO dan niet op te bestaan?"
 url = "/humanitaire-interventie"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = true
+draft = false
 
 [mp3]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-6.mp3"
+length = "18624663"
 
 [aac]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-6.mp3"
+length = "18624663"
 
 [image]
 url = "navo-cover.png"

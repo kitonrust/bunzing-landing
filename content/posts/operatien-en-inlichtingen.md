@@ -8,20 +8,20 @@ series_slug = "navo"
 number = "5"
 layout = "single"
 eptype = "full"
-duration = "00:20:00"
+duration = "00:23:21"
 
 short_description = "Italië wordt geschokt door de onthulling van een geheim NAVO-netwerk. Ook Nederland wil opheldering. Komt die er?"
 url = "/operatien-en-inlichtingen"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = true
+draft = false
 
 [mp3]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-5.mp3"
+length = "18297855"
 
 [aac]
-asset_link = "..."
-length = "..."
+asset_link = "bunzing-navo-aflevering-5.mp3"
+length = "18297855"
 
 [image]
 url = "navo-cover.png"
