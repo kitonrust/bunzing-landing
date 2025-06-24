@@ -66,7 +66,7 @@
             {{if gt .Params.number 0}}
             <itunes:episode>{{ .Params.number }}</itunes:episode>
             {{ end }}
-            <itunes:explicit> {{ .Params.explicit }}</itunes:explicit>
+            <itunes:explicit>{{ .Params.explicit }}</itunes:explicit>
             <itunes:title>{{ .Params.title }}</itunes:title>
             <itunes:summary>{{ .Params.short_description | plainify }}</itunes:summary>
             <itunes:subtitle>{{ .Params.short_description | plainify }}</itunes:subtitle>
