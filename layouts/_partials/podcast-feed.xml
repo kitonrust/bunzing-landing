@@ -63,6 +63,7 @@
             <itunes:author>{{.Site.Params.author.name}}</itunes:author>
             <itunes:season>{{ .Params.season }}</itunes:season>
             <itunes:episode>{{ .Params.number }}</itunes:episode>
+            <itunes:episodeType>{{ .Params.episodetype }}</itunes:episodeType>
             <itunes:title>{{ .Params.title }}</itunes:title>
             <itunes:summary>{{ .Params.short_description | plainify }}</itunes:summary>
             <itunes:subtitle>{{ .Params.short_description | plainify }}</itunes:subtitle>
