@@ -13,7 +13,7 @@ duration = "00:17:12"
 short_description = "In veel landen gaan stemmen op om uit het Atlantisch pact te stappen. Is er leven na de NAVO?"
 url = "/eruit"
 tags = ["NAVO", "politiek", "geschiedenis"]
-draft = true
+draft = false
 
 [mp3]
 asset_link = "bunzing-navo-aflevering-7.mp3"
