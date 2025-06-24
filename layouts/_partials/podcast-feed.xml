@@ -44,7 +44,7 @@
             <itunes:email>{{.Site.Params.author.email}}</itunes:email>
         </itunes:owner>
         <itunes:block>no</itunes:block>
-        <itunes:explicit>no</itunes:explicit>
+        <itunes:explicit>{{.Site.Params.podcast.explicit }}</itunes:explicit>
         <itunes:image href="{{.Site.Params.podcast.download_url}}{{.Site.Params.podcast.cover_image}}"/>
         {{ range (where .Site.RegularPages "Params.layout" "single")}}
         {{ .Scratch.Set "asset" .Params.aac }}
