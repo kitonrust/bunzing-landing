@@ -1,5 +1,5 @@
 +++
-date = "2025-06-10T12:00:07+0200"
+date = "2025-06-24T00:00:07+0200"
 date_nl = "24 juni 2025"
 author = "Bunzing"
 title = "Eruit?"
