@@ -1,17 +1,33 @@
 {{ define "main" }}
-<div class="my-12 bg-red-500">{{ partial "audio.html" . }}</div>
-<div class="mx-auto max-w-screen-xl py:12 lg:py-16 lg:px-12">
-  <h1 class="text-lime-50 mb-2 text-5xl md:text-6xl tracking-tight font-bold">
-    {{ .Title }}
-  </h1>
-  {{ if gt (int .Params.Number) 0 }}
-  <p class="text-lime-100 mb-6 text-2xl tracking-tight">
-    {{ .Params.series_title }} | Aflevering {{ .Params.Number }}
-  </p>
-  {{ end }}
 
-  <div class="text-lime-100 text-lg md:mr-auto md:max-w-4xl">
-    {{ .Content }}
+<div class="my-12 bg-red-500">{{ partial "audio.html" . }}</div>
+
+<div class="mx-auto max-w-screen-5xl py-12 lg:py-16 lg:px-12">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Team Section -->
+    <div class="order-2 lg:order-1">{{ partial "team-vertical.html" . }}</div>
+
+    <!-- Title, Meta, Content -->
+    <div class="order-1 lg:order-2">
+      <h1
+        class="text-lime-50 mb-2 text-5xl md:text-6xl tracking-tight font-bold"
+      >
+        {{ .Title }}
+      </h1>
+
+      {{ if gt (int .Params.Number) 0 }}
+      <p class="text-lime-100 mb-6 text-2xl tracking-tight">
+        {{ .Params.series_title }} | Aflevering {{ .Params.Number }}
+      </p>
+      {{ end }}
+
+      <div class="text-lime-100 text-lg md:mr-auto md:max-w-4xl">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
+
+  {{ partial "episodes-other.html" . }}
 </div>
-{{ partial "episodes-other.html" . }} {{ end }}
+
+{{ end }}
