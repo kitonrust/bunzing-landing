@@ -41,6 +41,7 @@ email = "hallo@bunzing.org"
   itunes_url = "https://podcasts.apple.com/us/podcast/navo-de-keerzijde-van-een-verdrag/id1820276755"
   itunes_id = "id1820276755"
   cover_image = "navo-cover.png"
+  copyright = "CC BY-NC-SA · 2025 Bunzing"
 
 [outputFormats.aacfeed]
 MediaType = "application/rss+xml"
