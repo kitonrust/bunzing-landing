@@ -2,13 +2,15 @@
 
 <div class="my-12 bg-red-500">{{ partial "audio.html" . }}</div>
 
-<div class="mx-auto max-w-screen-5xl py-12 lg:py-16 lg:px-12">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-    <!-- Team Section -->
-    <div class="order-2 lg:order-1">{{ partial "team-vertical.html" . }}</div>
+<div class="mx-auto max-w-screen-5xl pt-6 lg:pt-8 lg:px-12">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Team Section (stacks on top on small screens, left column on lg+) -->
+    <div class="order-2 lg:order-1 lg:col-span-1">
+      {{ partial "team-vertical.html" . }}
+    </div>
 
-    <!-- Title, Meta, Content -->
-    <div class="order-1 lg:order-2">
+    <!-- Title, Meta, Content Section (stacks below on small screens, spans 2 columns on lg+) -->
+    <div class="order-1 lg:order-2 lg:col-span-2">
       <h1
         class="text-lime-50 mb-2 text-5xl md:text-6xl tracking-tight font-bold"
       >
