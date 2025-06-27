@@ -1,0 +1,188 @@
+<div class="my-8 border-t-2 border-lime-50">
+  <h2 class="mt-12 mb-4 text-3xl tracking-tight leading-tight text-lime-50">
+    Genoten? Deel deze aflevering:
+  </h2>
+  <div class="flex flex-wrap gap-3">
+    {{ $title := .Title | urlquery }} {{ $url := .Permalink | urlquery }}
+
+    <a
+      href="https://x.com/intent/tweet?text={{ $title }},%20in%20{{ .Params.series_title }}%20&url={{ $url }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Deel op X (Twitter)"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        class="h-6 w-6"
+        fill="currentColor"
+        viewBox="0 -2 24 24"
+        aria-hidden="true"
+      >
+        <path
+          d="M0.971875 0.570007L8.75187 10.97L0.921875 19.43H2.68187L9.54187 12.02L15.0819 19.43H21.0819L12.8519 8.44001L20.1419 0.570007H18.3819L12.0719 7.39001L6.97188 0.570007H0.971875ZM3.56188 1.87001H6.32188L18.4919 18.14H15.7319L3.56188 1.87001Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- Facebook -->
+    <a
+      href="https://facebook.com/sharer/sharer.php?u={{ $url }}&text={{ $title }},%20in{{ .Params.series_title}}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Deel op Facebook"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        class="h-6 w-6"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </a>
+
+    <!-- Linkedin -->
+    <a
+      href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }},%20in%20{{ .Params.series_title }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Deel op LinkedIn"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        class="h-6 w-6"
+        viewBox="0 -2 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+      >
+        <path
+          d="M17.9761 0H2.01609C0.896094 0 -0.00390625 0.9 -0.00390625 2V18C-0.00390625 19.1 0.896094 20 2.01609 20H17.9861C19.0961 20 20.0061 19.1 20.0061 18V2C20.0061 0.9 19.1061 0 17.9861 0H17.9761ZM6.15609 16.42H3.22609V6.99H6.15609V16.41V16.42ZM4.67609 5.84C3.75609 5.84 3.15609 5.18 3.15609 4.38C3.15609 3.58 3.77609 2.92 4.71609 2.92C5.65609 2.92 6.23609 3.56 6.25609 4.38C6.25609 5.19 5.65609 5.84 4.67609 5.84ZM16.8561 16.42H13.9261V11.2C13.9261 9.99 13.5061 9.16 12.4461 9.16C11.6361 9.16 11.1561 9.72 10.9461 10.26C10.8661 10.45 10.8461 10.72 10.8461 10.99V16.42H7.91609V10C7.91609 8.82 7.87609 7.84 7.83609 6.99H10.3761L10.5161 8.3H10.5761C10.9661 7.68 11.9061 6.78 13.4861 6.78C15.4161 6.78 16.8561 8.07 16.8561 10.85V16.42Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- Reddit -->
+    <a
+      href="https://www.reddit.com/submit?url={{ $url }}&title={{ $title }},%20in%20{{ .Params.series_title }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Deel op Reddit"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        class="h-6 w-6"
+        viewBox="0 0 192 192"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+      >
+        <g stroke-width="0"></g>
+        <g stroke-linecap="round" stroke-linejoin="round"></g>
+
+        <path
+          fill="currentColor"
+          d="m33.067 111.226 5.826 1.435a6 6 0 0 0-3.978-7.143l-1.848 5.708Zm17.548-25.068-4.728 3.694a6 6 0 0 0 8.341 1.096l-3.613-4.79Zm90.77 0-3.613 4.79a6 6 0 0 0 8.341-1.096l-4.728-3.694Zm17.548 25.068-1.848-5.708a6 6 0 0 0-3.978 7.143l5.826-1.435ZM96 174.001c18.846 0 36.138-5.722 48.855-15.259C157.573 149.203 166 135.568 166 120.001h-12c0 10.943-5.9 21.307-16.345 29.141-10.447 7.835-25.155 12.859-41.655 12.859v12Zm-70-54c0 15.567 8.427 29.202 21.145 38.741 12.717 9.537 30.01 15.259 48.855 15.259v-12c-16.5 0-31.208-5.024-41.655-12.859C43.9 141.308 38 130.944 38 120.001H26Zm1.241-10.21A42.616 42.616 0 0 0 26 120.001h12c0-2.505.306-4.956.893-7.34l-11.652-2.87ZM16 96.001c0 9.793 6.394 18.076 15.219 20.933l3.696-11.416A10.007 10.007 0 0 1 28 96.001H16Zm22-22c-12.15 0-22 9.85-22 22h12c0-5.523 4.477-10 10-10v-12Zm17.343 8.463C51.326 77.324 45.049 74 38 74v12c3.2 0 6.047 1.496 7.887 3.851l9.456-7.388ZM96 66c-18.916 0-36.268 5.764-48.998 15.367l7.226 9.58C64.682 83.063 79.438 78 96 78V66Zm48.998 15.367C132.268 71.765 114.916 66 96 66v12c16.563 0 31.318 5.062 41.772 12.947l7.226-9.58Zm1.115 8.484a9.972 9.972 0 0 1 7.887-3.85v-12c-7.05 0-13.326 3.322-17.343 8.463l9.456 7.388Zm7.887-3.85c5.523 0 10 4.477 10 10h12c0-12.15-9.85-22-22-22v12Zm10 10c0 4.438-2.895 8.215-6.915 9.517l3.696 11.416c8.825-2.857 15.219-11.14 15.219-20.933h-12Zm2 24a42.63 42.63 0 0 0-1.241-10.21l-11.652 2.87c.587 2.384.893 4.835.893 7.34h12Z"
+        ></path>
+        <circle cx="68" cy="110.001" r="12" fill="currentColor"></circle>
+        <circle cx="124" cy="110.001" r="12" fill="currentColor"></circle>
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-width="12"
+          d="M120 138.001s-8 6-24 6-24-6-24-6"
+        ></path>
+        <circle
+          cx="146"
+          cy="36.001"
+          r="12"
+          stroke="currentColor"
+          stroke-width="12"
+        ></circle>
+        <path
+          fill="currentColor"
+          fill-rule="evenodd"
+          d="M107.177 22.118a6 6 0 0 0-7.028 4.553l-10 44a6 6 0 1 0 11.702 2.66l8.704-38.3 24.074 4.815A11.985 11.985 0 0 1 134 36c0-3.036 1.127-5.808 2.986-7.922l-29.809-5.961Z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- Whatsapp -->
+    <a
+      href="whatsapp://send?text={{ $title }},%20in%20{{ .Params.series_title }},%20op%20{{ $url }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Deel op WhatsApp"
+      data-action="share/whatsapp/share"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        class="w-6 h-6"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        fill="currentColor"
+      >
+        <path
+          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+        />
+      </svg>
+    </a>
+
+    <!-- Telegram -->
+    <a
+      href="https://t.me/share/url?url={{ $url }}&text={{ $title }},%20in%20{{ .Params.series_title }}"
+      target="_blank"
+      rel="noopener"
+      aria-label="Deel op Telegram"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g stroke-width="0"></g>
+        <g stroke-linecap="round" stroke-linejoin="round"></g>
+
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M23.1117 4.49449C23.4296 2.94472 21.9074 1.65683 20.4317 2.227L2.3425 9.21601C0.694517 9.85273 0.621087 12.1572 2.22518 12.8975L6.1645 14.7157L8.03849 21.2746C8.13583 21.6153 8.40618 21.8791 8.74917 21.968C9.09216 22.0568 9.45658 21.9576 9.70712 21.707L12.5938 18.8203L16.6375 21.8531C17.8113 22.7334 19.5019 22.0922 19.7967 20.6549L23.1117 4.49449ZM3.0633 11.0816L21.1525 4.0926L17.8375 20.2531L13.1 16.6999C12.7019 16.4013 12.1448 16.4409 11.7929 16.7928L10.5565 18.0292L10.928 15.9861L18.2071 8.70703C18.5614 8.35278 18.5988 7.79106 18.2947 7.39293C17.9906 6.99479 17.4389 6.88312 17.0039 7.13168L6.95124 12.876L3.0633 11.0816ZM8.17695 14.4791L8.78333 16.6015L9.01614 15.321C9.05253 15.1209 9.14908 14.9366 9.29291 14.7928L11.5128 12.573L8.17695 14.4791Z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </a>
+
+    <!-- Email -->
+    <a
+      href="mailto:?subject=Podcast%20{{ .Params.series_title }},%20afleverig%20{{ $title }}&body=Luister hier eens naar: {{ $url }}"
+      target="_self"
+      rel="noopener"
+      aria-label="Deel via email"
+      class="text-lime-100 hover:text-red-500"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+        ></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+    </a>
+  </div>
+</div>
