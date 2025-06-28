@@ -1,16 +1,16 @@
 {{ define "main" }}
 
-<div class="my-12 bg-red-500">{{ partial "audio.html" . }}</div>
+<div class="mt-12 bg-red-500">{{ partial "audio.html" . }}</div>
 
 <div class="mx-auto max-w-screen-5xl pt-6 lg:pt-8 lg:px-12">
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-6">
     <!-- Team Section -->
-    <div class="order-2 lg:order-1 lg:col-span-1">
+    <div class="order-2 lg:order-1 lg:col-span-1 row-span-2">
       {{ partial "team-vertical.html" . }}
     </div>
 
     <!-- Title, Meta, Content Section  -->
-    <div class="order-1 lg:order-2 lg:col-span-2">
+    <div class="order-1 lg:order-2 lg:col-span-2 row-span-1">
       <h1
         class="text-lime-50 mb-2 text-5xl md:text-6xl tracking-tight font-bold"
       >
@@ -26,6 +26,9 @@
       <div class="text-lime-100 text-lg md:mr-auto md:max-w-4xl">
         {{ .Content }}
       </div>
+    </div>
+    <div class="row-span-1 lg:col-span-2 order-3">
+      {{ partial "share-buttons.html" . }}
     </div>
   </div>
 
