@@ -19,7 +19,7 @@
         <sy:updatePeriod>hourly</sy:updatePeriod>
         <sy:updateFrequency>1</sy:updateFrequency>
         <language>en</language>
-        <copyright>{{.Site.Title}}</copyright>
+        <copyright>{{.Site.Params.podcast.copyright }}</copyright>
         <managingEditor>{{.Site.Params.author.email}} ({{ .Site.Params.author.name }})</managingEditor>
         <webMaster>{{.Site.Params.author.email}} ({{ .Site.Params.author.name }})</webMaster>
 
