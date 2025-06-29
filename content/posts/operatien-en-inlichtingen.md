@@ -30,4 +30,4 @@ url = "navo-cover.png"
 alt = "NAVO: De Keerzijde van een Verdrag"
 +++
 
-Een geheim NAVO-netwerk zorgt in Italië voor oproer. In Nederland worden vragen gesteld. Is zo'n netwerk ook hier actief? Is er een verband met geheime wapenvondsten in de jaren '80? De betrokken ministers reageren ontwijken.
+Een geheim NAVO-netwerk zorgt in Italië voor oproer. In Nederland worden vragen gesteld. Is zo'n netwerk ook hier actief? Is er een verband met geheime wapenvondsten in de jaren '80? De betrokken ministers reageren ontwijkend.
