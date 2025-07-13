@@ -1,22 +1,14 @@
 {{ define "main" }}
-<section class="border-b border-lime-50">{{ partial "hero.html" . }}</section>
-<section class="border-b border-lime-50">
-  {{ partial "platforms.html" . }}
-</section>
+<section class="border-b-3 border-lime-50">{{ partial "hero-showcase.html" . }}</section>
 
-<!-- <section class="border-b border-lime-50">
-  {{ partial "countdown.html" . }}
-</section> -->
-<section>{{ partial "episode-list.html" . }}</section>
-<section class="border-b border-lime-50">
-  {{ partial "review.html" . }}
-</section>
-<section class="border-b border-lime-50">
-  {{ partial "more-info.html" . }}
-</section>
-<section class="mt-4 border-b border-lime-50">
-  {{ partial "team.html" . }}
-</section>
+<section class="border-b-3 border-lime-50 ">{{ partial "article-list.html" . }}</section>
+
+<section class="border-b-3 border-lime-50">  
+{{ partial "cta.html" . }}</section>
+
+<section>{{ partial "episode-list-minimal.html" . }}</section>
+
+
 <section class="mt-4 border-b border-lime-50">
   {{ partial "cta.html" . }}
 </section>
