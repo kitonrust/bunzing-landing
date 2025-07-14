@@ -1,0 +1,53 @@
+{{ define "main" }}
+
+{{ $articles := where .Site.RegularPages "Section" "artikelen" }}
+{{ $sorted := sort $articles "Date" "desc" }}
+{{ $limit := 11 }}
+{{ $articles = first $limit $sorted }}
+{{ $count := len $articles }}
+
+<div class="space-y-8 text-lime-50">
+
+  {{/* Hero article 0 */}}
+  {{ with index $articles 0 }}
+    {{ partial "article-hero.html" (dict "article" .) }}
+  {{ end }}
+
+  {{/* We'll loop over the rest starting from 1 */}}
+  {{ $i := 1 }}
+  {{ $step := 5 }} {{/* 4 bento + 1 full-width = 5 articles per cycle */}}
+
+  {{ range seq 1 (sub $count 1) }}
+    {{- if eq (mod (sub . 1) $step) 0 }}
+      {{ $start := . }}
+      {{/* Calculate end for bento group (4 articles) */}}
+      {{ $bentoEnd := add $start 3 }}
+      {{ if ge $bentoEnd $count }}
+        {{ $bentoEnd = sub $count 1 }}
+      {{ end }}
+
+      {{/* Slice the bento articles */}}
+      {{ $bentoArticles := slice }}
+      {{ range seq $start $bentoEnd }}
+        {{ $bentoArticles = $bentoArticles | append (index $articles .) }}
+      {{ end }}
+
+      {{ partial "article-bento.html" (dict "articles" $bentoArticles) }}
+
+      {{ $fullWidthIndex := add $bentoEnd 1 }}
+      {{ if lt $fullWidthIndex $count }}
+        {{ partial "article-featured.html" (dict "article" (index $articles $fullWidthIndex)) }}
+
+        {{/* Insert CTA only once after the first full-width article */}}
+        {{ if eq $fullWidthIndex 5 }}
+          <div class="my-8">
+            {{ partial "cta.html" }}
+          </div>
+        {{ end }}
+
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+</div>
+{{ end }}

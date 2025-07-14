@@ -1,46 +1,74 @@
- <div id="contact" class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-    <div class="md:flex md:justify-between">
-      <div class="mb-6">
-        <p class="mb-6 self-center text-lime-100 text-2xl font-semibold whitespace-nowrap"
+ <div id="contact" class="mx-auto w-full max-w-screen-xl px-4 pt-6 lg:py-8 text-lime-100 border-t-2 border-lime-50">
+    <div class="md:flex md:justify-between border-b border-lime-50 pb-6">
+      <div class="mb-6 ">
+        <p class="mb-6 self-center text-3xl font-semibold whitespace-nowrap"
           >Bunzing</p>
       </div>
-      <div class="grid gap-8 sm:gap-6 mr:mx-12">
+      <ul class="text-lime-100 font-light">
+        <li class="">
+
+          <p>{{ .Site.Params.contact.location }}</p>
+        </li>
+        <li>
+          <p>{{ .Site.Params.contact.email }}</p>
+        </li>
+      </ul>
+      </div>
+
+<!-- Footer nav -->
+      <div class="grid gap-8 sm:gap-6 mr:mx-12 font-sans text-sm">
         <div>
-          <p class="mb-4 text-sm font-semibold text-lime-100 uppercase">
-            Organisatie
-          </p>
-          <ul class="text-lime-100 font-light">
-            <li class="">
-              <p>{{ .Site.Params.contact.organisation }}</p>
-              <p>{{ .Site.Params.contact.location }}</p>
-            </li>
-            <li>
-              <p>{{ .Site.Params.contact.email }}</p>
-            </li>
-          </ul>
+
+          <ul
+          class="font-medium text-lg flex flex-col md:p-0 mt-4 rounded-lg bg-lime-950 md:flex-row md:space-x-8 md:mt-0 md:border-0"
+        >
+          <li>
+            <a
+              href="/luister/navo"
+              class="block py-2 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              >Luister</a
+            >
+          </li>
+          <li>
+            <a
+              href="/artikelen"
+              class="block py-2 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              >Lees</a
+            >
+          </li>
+          <li>
+            <a
+              href="/over"
+              class="block py-2 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              >Over</a
+            >
+          </li>
+        </ul>
         </div>
       </div>
     </div>
     </div>
   </div>
-<footer class="p-4 sm:p-6">
-  <div class="mx-auto max-w-screen-xl">
+
+    <!-- Footer socials -->
+<footer class="px-4 pb-4">
+  <div class="mx-auto max-w-screen-xl font-sans">
       <hr class="mb-6 lg:mb-8 border-lime-100 mx-auto" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-lime-100 sm:text-center"> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl" class="underline hover:text-red-500">CC BY-NC-SA</a> · {{ now.Year }} Bunzing, tenzij anders vermeld
-          </span>
           
-          <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+      
+           <p class="text-lime-50">Sociaal</p>
+          <div class="flex my-4 space-x-2 sm:justify-center sm:mt-0">
               <!-- Facebook -->
               <a href="{{ .Site.Params.facebook }}" class="text-lime-100 hover:text-red-500">
-              <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
               </svg>
             </a>
 
               <!-- Instagram -->
               <a href="{{ .Site.Params.instagram }}" class="text-lime-100 hover:text-red-500">
-                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill-rule="evenodd"
                     d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
@@ -53,7 +81,7 @@
               <a href="{{ .Site.Params.linkedin }}" class="text-lime-100 hover:text-red-500">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5" 
+                class="h-7 w-7" 
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -73,7 +101,7 @@
               <a href="{{ .Site.Params.mastodon }}" class="text-lime-100 hover:text-red-500">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
+                class="h-7 w-7"
                 fill="currentColor"
                 viewBox="0 0 16 16"
               >
@@ -85,7 +113,7 @@
 
                 <!-- Substack -->
                 <a href="{{ .Site.Params.substack }}" class="text-lime-100 hover:text-red-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 -2 20 20" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 -2 20 20" aria-hidden="true">
                   <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
                 </svg>
                 </a>
@@ -94,7 +122,7 @@
               <a href="{{ .Site.Params.spotify }}" class="text-lime-100 hover:text-red-500">
                 <svg
                   aria-hidden="true"
-                  class="h-5 w-5" fill="currentColor"                 data-icon="spotify"
+                  class="h-7 w-7" fill="currentColor"                 data-icon="spotify"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 496 512"
@@ -110,7 +138,7 @@
                <a href="{{ .Site.Params.youtube }}" class="text-lime-100 hover:text-red-500">
                 <svg
                   aria-hidden="true"
-                  class="h-5 w-5" fill="currentColor"  
+                  class="h-7 w-7" fill="currentColor"  
                   data-icon="youtube"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +155,7 @@
               <a href="{{ .Site.Params.podcast.itunes_url }}" class="text-lime-100 hover:text-red-500">
               <svg
                 aria-hidden="true"
-                class="w-5 h-5"
+                class="h-7 w-7"
                 fill="currentColor"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +171,7 @@
       <!-- RSS -->
       <a href="{{ .Site.BaseURL}}feed/mp3/index.xml" class="text-lime-100 hover:text-red-500">
       <svg
-      class="h-5 w-5" fill="currentColor"
+      class="h-7 w-7" fill="currentColor"
       aria-hidden="true"
       data-icon="rss"
       role="img"
@@ -157,6 +185,23 @@
       </svg>
       </a>
           </div>
+          
       </div>
+
+      <!-- Footer credits -->
+      <div class="flex items-center justify-between border-t border-lime-50 pt-6">
+        <span class="text-sm font-light text-lime-100 sm:text-center">
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl" class="inline-flex items-center gap-2 underline hover:text-red-500">
+
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  class="h-5 w-5 -mt-2 align-middle" fill="currentColor"
+        aria-hidden="true" viewBox="5.5 -3.5 64 64" enable-background="new 5.5 -3.5 64 64" xml:space="preserve">
+          <g>
+            <circle fill="none" cx="37.785" cy="28.501" r="28.836"/>
+            <path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314   c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143   c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429   c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2   c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657   c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913   c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971   c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344   c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187   l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657   c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2   c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629   c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686   C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2   c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113   c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686   c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313   c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z"/>
+          </g>
+          </svg>
+        
+         BY-NC-SA</a> · {{ now.Year }} Bunzing, tenzij anders vermeld
+          </span>
   </div>
 </footer>

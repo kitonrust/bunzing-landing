@@ -1,0 +1,80 @@
+<nav class="bg-lime-950 border-b border-lime-50 md:mx-4">
+    <div
+      class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4
+             md:flex-col md:items-center"
+    >
+      <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span
+          class="self-center text-4xl font-semibold whitespace-nowrap text-lime-100"
+          >Bunzing</span
+        >
+      </a>
+  
+      <button
+        data-collapse-toggle="navbar-default"
+        type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-lime-100 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-lime-100"
+        aria-controls="navbar-default"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"
+          />
+        </svg>
+      </button>
+  
+      <div class="hidden w-full md:block md:w-auto mt-4 md:mt-2" id="navbar-default">
+        <ul
+          class="font-medium text-lg flex flex-col md:flex-row md:justify-center md:space-x-8 rounded-lg bg-lime-950 md:bg-transparent md:p-0 md:border-0"
+        >
+          <li>
+            <a
+              href="/luister/navo"
+              class="block py-2 px-3 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              >Luister</a
+            >
+          </li>
+          <li>
+            <a
+              href="/artikelen"
+              class="block py-2 px-3 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              >Lees</a
+            >
+          </li>
+          <li>
+            <a
+              href="/over"
+              class="block py-2 px-3 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              >Over</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const toggleButton = document.querySelector("[data-collapse-toggle]");
+      const targetMenu = document.getElementById(
+        toggleButton.getAttribute("aria-controls")
+      );
+  
+      toggleButton.addEventListener("click", () => {
+        targetMenu.classList.toggle("hidden");
+      });
+    });
+  </script>
+  

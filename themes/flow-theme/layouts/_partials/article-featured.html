@@ -1,0 +1,19 @@
+{{ $article := .article }}
+{{ $feature := "" }}
+{{ with $article.Resources.GetMatch "feature.jpg" }}
+  {{ $feature = . }}
+{{ end }}
+
+<article class="overflow-hidden border-b border-lime-50 bg-red-500 pb-4 rounded-lg">
+  <a href="{{ $article.RelPermalink }}">
+    {{ with $feature }}
+      <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}" class="w-full h-64 object-cover rounded-t-lg">
+    {{ end }}
+    <div class="pt-4 px-4">
+      <p class="text-sm uppercase font-bold font-sans text-lg text-lime-100">{{ $article.Params.category }}</p>
+      <h2 class="text-4xl my-2">{{ $article.Title }}</h2>
+      <p>{{ $article.Params.short_description }}</p>
+      <p class="italic mt-4">door {{ $article.Params.author }}</p>
+    </div>
+  </a>
+</article>
