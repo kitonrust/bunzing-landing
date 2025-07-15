@@ -4,10 +4,10 @@
   {{ $feature = . }}
 {{ end }}
 
-<article class="overflow-hidden border-b border-lime-50 bg-red-500 pb-4 rounded-lg">
+<article class="overflow-hidden border-b border-lime-50 bg-red-500 pb-4">
   <a href="{{ $article.RelPermalink }}">
     {{ with $feature }}
-      <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}" class="w-full h-64 object-cover rounded-t-lg">
+      <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}" class="w-full h-64 object-cover">
     {{ end }}
     <div class="pt-4 px-4">
       <p class="text-sm uppercase font-bold font-sans text-lg text-lime-100">{{ $article.Params.category }}</p>

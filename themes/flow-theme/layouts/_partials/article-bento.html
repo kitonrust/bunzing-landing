@@ -10,7 +10,7 @@
 
     {{ if eq $i 0 }}
       <!-- Large Bento Card -->
-      <article class="col-span-12 md:col-span-6 md:row-span-12 group overflow-hidden rounded-lg border border-lime-50 bg-zinc-800">
+      <article class="col-span-12 md:col-span-6 md:row-span-12 group overflow-hidden border border-lime-50">
         <a href="{{ $article.RelPermalink }}">
           {{ with $feature }}
             <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}"
@@ -25,7 +25,7 @@
       </article>
     {{ else }}
       <!-- Smaller Bento Cards -->
-      <article class="col-span-12 md:col-span-6 md:row-span-4 group overflow-hidden rounded-lg border border-lime-50 bg-zinc-900 flex">
+      <article class="col-span-12 md:col-span-6 md:row-span-4 group overflow-hidden border border-lime-50 flex">
         <a href="{{ $article.RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
           <div class="flex-1">
             <p class="text-sm uppercase font-sans text-lime-100">{{ $article.Params.category }}</p>
@@ -34,7 +34,7 @@
           </div>
           {{ with $feature }}
             <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}"
-              class="w-2/5 aspect-square object-cover rounded-md" />
+              class="w-2/5 aspect-square object-cover" />
           {{ end }}
         </a>
       </article>
