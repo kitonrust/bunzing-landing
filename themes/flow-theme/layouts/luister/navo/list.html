@@ -1,12 +1,10 @@
 {{ define "main" }}
+<div class="bg-lime-950">
 <section class="border-b border-lime-50">{{ partial "hero.html" . }}</section>
 <section class="border-b border-lime-50">
   {{ partial "platforms.html" . }}
 </section>
 
-<!-- <section class="border-b border-lime-50">
-  {{ partial "countdown.html" . }}
-</section> -->
 <section>{{ partial "episode-list.html" . }}</section>
 <section class="border-b border-lime-50">
   {{ partial "review.html" . }}
@@ -20,4 +18,5 @@
 <section class="mt-4 border-b border-lime-50">
   {{ partial "cta.html" . }}
 </section>
+</div>
 {{ end }}

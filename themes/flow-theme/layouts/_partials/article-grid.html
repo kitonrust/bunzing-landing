@@ -1,0 +1,217 @@
+{{ $articles := where .Site.RegularPages.ByDate.Reverse "Section" "artikelen" }}
+{{ $max := 15 }}
+{{ range $i, $a := first $max $articles }}
+  {{ $.Scratch.Set (printf "article%d" (add $i 1)) $a }}
+{{ end }}
+
+<!-- 1. Full-width -->
+{{ with (.Scratch.Get "article1") }}
+{{ $feature := .Resources.GetMatch "feature.jpg" }}
+<article class="overflow-hidden border-b border-lime-50 bg-red-500 pb-4">
+    <a href="{{ .RelPermalink }}">
+        {{ with $feature }}
+          <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="w-full h-96 object-cover " />
+        {{ end }}
+        <div class="pt-6 px-4 text-lime-100">
+          <p class="text-sm uppercase font-bold font-sans">{{ .Params.category }}</p>
+          <h1 class="text-5xl font-extrabold my-4">{{ .Title }}</h1>
+          <p class="text-lg">{{ .Params.short_description }}</p>
+          <p class="italic mt-6">door {{ .Params.author }}</p>
+        </div>
+      </a>
+  </article>
+{{ end }}
+
+<!-- 2. Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-4">
+
+    <!-- Large card -->
+    {{ with (.Scratch.Get "article2") }}
+    {{ $feature := .Resources.GetMatch "feature.jpg" }}
+      <article class="bg-blue-100 p-4 md:col-span-1 md:row-span-6"><a href="{{ .RelPermalink }}">
+        {{ with $feature }}
+          <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+            class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
+        {{ end }}
+        <div class="p-4">
+          <p class="text-sm uppercase font-sans text-lg">{{ .Params.category }}</p>
+          <h2 class="text-3xl mb-2">{{ .Title }}</h2>
+          <p>{{ .Params.short_description }}</p>
+        </div>
+      </a>
+    </article>
+    {{ end }}
+  
+    <!-- Smaller cards -->
+    {{ with (.Scratch.Get "article3") }}
+    {{ $feature := .Resources.GetMatch "feature.jpg" }}
+      <article class="bg-blue-200 p-4 md:col-span-1 md:row-span-2">
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+            {{ with $feature }}
+              <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+                class="w-2/5 aspect-square object-cover" />
+            {{ end }}
+          </a>
+      </article>
+    {{ end }}
+  
+    {{ with (.Scratch.Get "article4") }}
+    {{ $feature := .Resources.GetMatch "feature.jpg" }}
+      <article class="bg-blue-300 p-4 md:col-span-1 md:row-span-2">
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+            {{ with $feature }}
+              <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+                class="w-2/5 aspect-square object-cover" />
+            {{ end }}
+          </a>
+      </article>
+    {{ end }}
+  
+    <!-- {{ with (.Scratch.Get "article5") }}
+    {{ $feature := .Resources.GetMatch "feature.jpg" }}
+      <article class="bg-blue-400 p-4 md:col-span-1 md:row-span-2">
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+            {{ with $feature }}
+              <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+                class="w-2/5 aspect-square object-cover" />
+            {{ end }}
+          </a>
+      </article>
+    {{ end }} -->
+  </div>
+  
+
+<!-- 3. Full-width -->
+{{ with (.Scratch.Get "article6") }}
+{{ $feature := .Resources.GetMatch "feature.jpg" }}
+  <article class="w-full bg-gray-200 p-6 text-xl font-bold">
+    <a href="{{ .RelPermalink }}">
+        {{ with $feature }}
+          <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="w-full h-64 object-cover">
+        {{ end }}
+      <div class="pt-4 px-4">
+          <p class="text-sm uppercase font-bold font-sans text-lg">{{ .Params.category }}</p>
+          <h2 class="text-4xl my-2">{{ .Title }}</h2>
+          <p>{{ .Params.short_description }}</p>
+          <p class="italic mt-4">door {{ .Params.author }}</p>
+        </div>
+    </a>
+  </article>
+{{ end }}
+
+<!-- 4. Four-column grid -->
+<div class="grid grid-cols-1 md:grid-cols-3">
+  {{ with (.Scratch.Get "article7") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="bg-green-100 p-4">
+        {{ with $feature }}
+        <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+          class="w-full aspect-square object-cover" />
+      {{ end }}
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase tracking-widest font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+        
+          </a>
+    </article>
+  {{ end }}
+
+  {{ with (.Scratch.Get "article8") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="bg-green-200 p-4">
+        {{ with $feature }}
+        <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+          class="w-full aspect-square object-cover" />
+      {{ end }}
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+        
+          </a>
+    </article>
+  {{ end }}
+
+  {{ with (.Scratch.Get "article9") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="bg-green-300 p-4">
+        {{ with $feature }}
+        <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+          class="w-full aspect-square object-cover" />
+      {{ end }}
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+        
+          </a>
+    </article>
+  {{ end }}
+
+  <!-- {{ with (.Scratch.Get "article10") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="bg-green-400 p-4">
+        {{ with $feature }}
+        <img src="{{ .RelPermalink }}" alt="{{ .Title }}"
+          class="w-full aspect-square object-cover" />
+      {{ end }}
+        <a href="{{ .RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
+            <div class="flex-1">
+              <p class="text-sm uppercase font-sans">{{ .Params.category }}</p>
+              <h3 class="text-2xl">{{ .Title }}</h3>
+              <p>{{ .Params.short_description }}</p>
+            </div>
+        
+          </a>
+    </article>
+  {{ end }} -->
+</div>
+
+<!-- 5. Bento Grid Again -->
+<div class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-6 gap-4">
+  {{ with (.Scratch.Get "article11") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="col-span-1 md:row-span-6 bg-red-100 p-4">{{ .Title }}</article>
+  {{ end }}
+
+  {{ with (.Scratch.Get "article12") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="md:col-span-2 md:row-span-2 bg-red-200 p-4">{{ .Title }}</article>
+  {{ end }}
+  {{ with (.Scratch.Get "article13") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="md:col-span-2 md:row-span-2 bg-red-300 p-4">{{ .Title }}</article>
+  {{ end }}
+  {{ with (.Scratch.Get "article14") }}
+  {{ $feature := .Resources.GetMatch "feature.jpg" }}
+    <article class="md:col-span-2 md:row-span-2 bg-red-400 p-4">{{ .Title }}</article>
+  {{ end }}
+</div>
+
+<!-- 6. Final Full-width -->
+{{ with (.Scratch.Get "article15") }}
+{{ $feature := .Resources.GetMatch "feature.jpg" }}
+  <article class="w-full bg-gray-200 p-6 text-xl font-bold">{{ .Title }}</article>
+{{ end }}

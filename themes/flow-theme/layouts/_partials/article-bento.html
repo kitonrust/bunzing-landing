@@ -1,7 +1,7 @@
 {{ $articles := .articles }}
 
 {{ if gt (len $articles) 0 }}
-<div class="w-full grid grid-cols-12 gap-4 p-1">
+<div class="w-full grid grid-cols-12">
   {{ range $i, $article := $articles }}
     {{ $feature := "" }}
     {{ with $article.Resources.GetMatch "feature.jpg" }}
@@ -10,14 +10,14 @@
 
     {{ if eq $i 0 }}
       <!-- Large Bento Card -->
-      <article class="col-span-12 md:col-span-6 md:row-span-12 group overflow-hidden border border-lime-50">
+      <article class="col-span-12 md:col-span-6 md:row-span-12 group overflow-hidden border border-lime-950">
         <a href="{{ $article.RelPermalink }}">
           {{ with $feature }}
             <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}"
               class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out" />
           {{ end }}
           <div class="p-4">
-            <p class="text-sm uppercase font-sans text-lg text-lime-100">{{ $article.Params.category }}</p>
+            <p class="text-sm uppercase font-sans text-lg">{{ $article.Params.category }}</p>
             <h2 class="text-3xl mb-2">{{ $article.Title }}</h2>
             <p>{{ $article.Params.short_description }}</p>
           </div>
@@ -25,10 +25,10 @@
       </article>
     {{ else }}
       <!-- Smaller Bento Cards -->
-      <article class="col-span-12 md:col-span-6 md:row-span-4 group overflow-hidden border border-lime-50 flex">
+      <article class="col-span-12 md:col-span-6 md:row-span-4 group overflow-hidden border border-lime-950 flex">
         <a href="{{ $article.RelPermalink }}" class="flex items-center gap-4 p-4 w-full">
           <div class="flex-1">
-            <p class="text-sm uppercase font-sans text-lime-100">{{ $article.Params.category }}</p>
+            <p class="text-sm uppercase font-sans">{{ $article.Params.category }}</p>
             <h3 class="text-2xl">{{ $article.Title }}</h3>
             <p>{{ $article.Params.short_description }}</p>
           </div>

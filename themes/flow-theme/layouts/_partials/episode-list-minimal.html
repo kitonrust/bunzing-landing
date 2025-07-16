@@ -1,18 +1,18 @@
-<section class="mt-8">
-    <div class="lg:py-16 mx-auto max-w-screen-xl">
+<section class="mt-8 text-lime-950">
+    <div class="lg:py-16 mx-auto max-w-3xl">
       <h2
-        class="mb-8 text-4xl tracking-tight leading-tight text-lime-50"
+        class="mb-8 text-4xl tracking-tight leading-tight "
         id="afleveringen"
       >
         Luister
       </h2>
-      <ul class="space-y-4 text-lime-50">
+      <ul class="space-y-4">
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections
         }} {{ range $pages.GroupByPublishDate "2006-01" }} {{ range sort .Pages
         "PublishDate" "asc" }}
-        <li class="border-b border-lime-100 pb-6 font-sans text-xl flex items-start gap-4">
+        <li class="border-b border-lime-950 pb-6 font-sans text-xl flex items-start gap-4">
           <!-- Left: Square Image -->
-          <div class="w-26 h-26 flex-shrink-0 border border-1 border-lime-100">
+          <div class="w-32 h-full aspect-square flex-shrink-0 border border-1 border-lime-950">
             <img
               src="/media/navo.png"
               alt="{{
@@ -29,7 +29,7 @@
               $parts 1) }} {{ $seconds := int (index $parts 2) }} {{ $totalMinutes
               := add (mul $hours 60) $minutes }} {{ if gt $seconds 0 }} {{
               $totalMinutes = add $totalMinutes 1 }} {{ end }}
-              <p class="text-lime-100 text-sm flex items-center mb-2">
+              <p class="text-sm flex items-center mb-2">
                 <svg
                   class="mr-2"
                   width="1em"
@@ -47,13 +47,13 @@
               </p>
               {{ end }}
               <h3
-                class="mb-1 text-lg md:text-2xl font-bold tracking-tight text-lime-50 hover:text-red-500"
+                class="mb-1 text-lg md:text-2xl font-bold tracking-tight hover:text-red-500"
               >
                 {{ .Title }} {{ if gt (int .Params.Number) 0 }} | NAVO De keerzijde Afl. {{ .Params.Number }} {{ end
                 }}
               </h3>
             </a>
-            <!-- <p class="text-lime-100 py-2">{{ .Params.short_description }}</p> -->
+            <p class="py-2">{{ .Params.short_description }}</p>
           </div>
         </li>
         {{end}} {{end}}

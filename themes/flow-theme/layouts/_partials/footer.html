@@ -1,10 +1,11 @@
- <div id="contact" class="mx-auto w-full max-w-screen-xl px-4 pt-6 lg:py-8 text-lime-100 border-t-2 border-lime-50">
-    <div class="md:flex md:justify-between border-b border-lime-50 pb-6">
-      <div class="mb-6 ">
-        <p class="mb-6 self-center text-3xl font-semibold whitespace-nowrap"
+
+<div id="contact" class="mx-auto bg-stone-200 w-full max-w-screen-xl px-4 pt-6 lg:py-8 ">
+    <div class="md:flex mx-4 md:justify-between border-b border-lime-950 pb-6">
+ 
+        <p class="mb-2 self-center text-3xl font-semibold whitespace-nowrap"
           >Bunzing</p>
-      </div>
-      <ul class="text-lime-100 font-light">
+
+      <ul class="font-sans">
         <li class="">
 
           <p>{{ .Site.Params.contact.location }}</p>
@@ -16,58 +17,56 @@
       </div>
 
 <!-- Footer nav -->
-      <div class="grid gap-8 sm:gap-6 mr:mx-12 font-sans text-sm">
+      <div class="grid px-4 sm:gap-6 mr:mx-12 font-sans">
         <div>
 
           <ul
-          class="font-medium text-lg flex flex-col md:p-0 mt-4 rounded-lg bg-lime-950 md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          class="font-medium text-lg flex flex-col md:p-0 my-2 "
         >
           <li>
             <a
               href="/luister/navo"
-              class="block py-2 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              class="block py-2 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
               >Luister</a
             >
           </li>
           <li>
             <a
               href="/artikelen"
-              class="block py-2 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              class="block py-2  rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
               >Lees</a
             >
           </li>
           <li>
             <a
               href="/over"
-              class="block py-2 text-lime-50 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
+              class="block py-2 rounded-2xl hover:bg-red-500 md:hover:bg-transparent md:hover:text-red-500 md:p-0"
               >Over</a
             >
           </li>
         </ul>
         </div>
-      </div>
-    </div>
-    </div>
-  </div>
+    
+
+
 
     <!-- Footer socials -->
-<footer class="px-4 pb-4">
-  <div class="mx-auto max-w-screen-xl font-sans">
-      <hr class="mb-6 lg:mb-8 border-lime-100 mx-auto" />
+
+  <div class="mx-auto">
+      <hr class="mb-6 lg:mb-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-          
       
-           <p class="text-lime-50">Sociaal</p>
-          <div class="flex my-4 space-x-2 sm:justify-center sm:mt-0">
+           <p class="">Sociaal</p>
+          <div class="flex my-4 space-x-3 sm:justify-center sm:mt-0">
               <!-- Facebook -->
-              <a href="{{ .Site.Params.facebook }}" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.facebook }}" class=" hover:text-red-500">
               <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
               </svg>
             </a>
 
               <!-- Instagram -->
-              <a href="{{ .Site.Params.instagram }}" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.instagram }}" class="hover:text-red-500">
                 <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fill-rule="evenodd"
@@ -78,7 +77,7 @@
               </a>
   
                   <!-- Linkedin -->
-              <a href="{{ .Site.Params.linkedin }}" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.linkedin }}" class="hover:text-red-500">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-7 w-7" 
@@ -98,7 +97,7 @@
               </a>
 
               <!-- Mastodon -->
-              <a href="{{ .Site.Params.mastodon }}" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.mastodon }}" class="hover:text-red-500">
                 <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-7 w-7"
@@ -112,14 +111,14 @@
               </a>
 
                 <!-- Substack -->
-                <a href="{{ .Site.Params.substack }}" class="text-lime-100 hover:text-red-500">
+                <a href="{{ .Site.Params.substack }}" class="hover:text-red-500">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 -2 20 20" aria-hidden="true">
                   <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
                 </svg>
                 </a>
 
               <!-- Spotify -->
-              <a href="{{ .Site.Params.spotify }}" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.spotify }}" class="hover:text-red-500">
                 <svg
                   aria-hidden="true"
                   class="h-7 w-7" fill="currentColor"                 data-icon="spotify"
@@ -135,7 +134,7 @@
               </a>
 
                <!-- Youtube -->
-               <a href="{{ .Site.Params.youtube }}" class="text-lime-100 hover:text-red-500">
+               <a href="{{ .Site.Params.youtube }}" class=" hover:text-red-500">
                 <svg
                   aria-hidden="true"
                   class="h-7 w-7" fill="currentColor"  
@@ -152,7 +151,7 @@
               </a>
 
               <!-- Apple podcasts -->
-              <a href="{{ .Site.Params.podcast.itunes_url }}" class="text-lime-100 hover:text-red-500">
+              <a href="{{ .Site.Params.podcast.itunes_url }}" class="hover:text-red-500">
               <svg
                 aria-hidden="true"
                 class="h-7 w-7"
@@ -169,7 +168,7 @@
             </a>              
 
       <!-- RSS -->
-      <a href="{{ .Site.BaseURL}}feed/mp3/index.xml" class="text-lime-100 hover:text-red-500">
+      <a href="{{ .Site.BaseURL}}feed/mp3/index.xml" class=" hover:text-red-500">
       <svg
       class="h-7 w-7" fill="currentColor"
       aria-hidden="true"
@@ -189,9 +188,12 @@
       </div>
 
       <!-- Footer credits -->
-      <div class="flex border-t border-lime-50 pt-6">
-        <p class="text-sm font-light text-lime-100 max-w-5xl">
+      <div class="flex border-t border-lime-950 py-6">
+        <p class="font-light max-w-5xl">
           {{ now.Year }} · Origineel Bunzing materiaal valt onder een Creatief Gemeengoedlicentie en mag onder <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl" class="underline hover:text-red-500">de volgende voorwaarden</a> hergebruikt worden.
         </p>
   </div>
-</footer>
+</div>
+</div>
+
+</div>

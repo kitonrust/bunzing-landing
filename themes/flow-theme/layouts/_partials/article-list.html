@@ -1,7 +1,7 @@
 <section class="">
     <div class="py-8 lg:py-16 mx-auto max-w-screen-xl">
       <h2
-        class="mb-4 text-4xl tracking-tight leading-tight text-lime-50 border-b border-lime-50 pb-6"
+        class="mb-4 text-4xl tracking-tight leading-tight border-b border-lime-950 pb-6"
         id="artikelen"
       >
         Artikelen
@@ -11,20 +11,20 @@
       {{ $sorted := sort $articles "Date" "desc" }}
       {{ $recent := first 5 $sorted }}
 
-<div class="space-y-6 text-lime-50 border-b">
+<div class="space-y-6 border-b">
   {{ range $index, $article := $recent }}
     {{ $feature := $article.Resources.GetMatch "feature.jpg" }}
 
     {{ if eq $index 0 }}
       <!-- First article: large feature -->
-      <article class="overflow-hidden border-b border-lime-50 pb-4">
+      <article class="overflow-hidden border-b border-lime-950 pb-4">
         <a href="{{ $article.RelPermalink }}">
           {{ with $feature }}
             <img src="{{ .RelPermalink }}" alt="{{ $article.Title }}"
               class="w-full h-64 object-cover">
           {{ end }}
           <div class="pt-4">
-            <p class="text-sm uppercase font-sans text-lg text-lime-100">{{ $article.Params.category }}</p>
+            <p class="text-sm uppercase font-sans text-lg text-lime-800">{{ $article.Params.category }}</p>
             <h2 class="text-3xl mb-2">{{ $article.Title }}</h2>
             <p>{{ $article.Params.short_description }}</p>
             
@@ -34,10 +34,10 @@
 
     {{ else }}
       <!-- Other articles: smaller image -->
-      <article class="flex items-center gap-4 border-b border-lime-50 pb-6">
+      <article class="flex items-center gap-4 border-b border-lime-950 pb-6">
         <a href="{{ $article.RelPermalink }}" class="flex items-top gap-4">
           <div>
-            <p class="text-sm uppercase font-sans text-lime-100">{{ $article.Params.category }}</p>
+            <p class="text-sm uppercase font-sans text-lime-800">{{ $article.Params.category }}</p>
             <h3 class="text-2xl">{{ $article.Title }}</h3>
             <p>{{ $article.Params.short_description }}</p>
             
